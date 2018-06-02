@@ -1,0 +1,358 @@
+GEO.id,GEO.id2,GEO.display-label,NAICS.id,NAICS.display-label,YEAR.id,ESTAB,RCPTOT,PAYANN,PAYQTR1,EMP
+Geographic identifier code,Id2,Geographic area name,2012 NAICS code,Meaning of 2012 NAICS code,Year,Number of establishments,"Revenue ($1,000)","Annual payroll ($1,000)","First-quarter payroll ($1,000)",Number of paid employees for pay period including March 12
+0400000US01,01,Alabama,55,Management of companies and enterprises,2012,630,587851,1501986,380565,18532
+0400000US01,01,Alabama,551,Management of companies and enterprises,2012,630,587851,1501986,380565,18532
+0400000US01,01,Alabama,5511,Management of companies and enterprises,2012,630,587851,1501986,380565,18532
+0400000US01,01,Alabama,55111,Management of companies and enterprises,2012,630,587851,1501986,380565,18532
+0400000US01,01,Alabama,551111,Offices of bank holding companies,2012,38,115903,10855,2621,199
+0400000US01,01,Alabama,551112,Offices of other holding companies,2012,47,252019,52816,10944,516
+0400000US01,01,Alabama,551114,"Corporate, subsidiary, and regional managing offices",2012,545,219929,1438315,367000,17817
+0400000US02,02,Alaska,55,Management of companies and enterprises,2012,160,244590,684245,204481,6274
+0400000US02,02,Alaska,551,Management of companies and enterprises,2012,160,244590,684245,204481,6274
+0400000US02,02,Alaska,5511,Management of companies and enterprises,2012,160,244590,684245,204481,6274
+0400000US02,02,Alaska,55111,Management of companies and enterprises,2012,160,244590,684245,204481,6274
+0400000US02,02,Alaska,551111,Offices of bank holding companies,2012,3,7917,0,0,0
+0400000US02,02,Alaska,551112,Offices of other holding companies,2012,21,76219,32111,7337,232
+0400000US02,02,Alaska,551114,"Corporate, subsidiary, and regional managing offices",2012,136,160454,652134,197144,6042
+0400000US04,04,Arizona,55,Management of companies and enterprises,2012,922,D,D,D,k
+0400000US04,04,Arizona,551,Management of companies and enterprises,2012,922,D,D,D,k
+0400000US04,04,Arizona,5511,Management of companies and enterprises,2012,922,D,D,D,k
+0400000US04,04,Arizona,55111,Management of companies and enterprises,2012,922,D,D,D,k
+0400000US04,04,Arizona,551111,Offices of bank holding companies,2012,1,D,D,D,b
+0400000US04,04,Arizona,551112,Offices of other holding companies,2012,98,523947,69173,16265,1020
+0400000US04,04,Arizona,551114,"Corporate, subsidiary, and regional managing offices",2012,823,359179,4282006,1298658,47910
+0400000US05,05,Arkansas,55,Management of companies and enterprises,2012,1252,928213,3292435,1055569,39993
+0400000US05,05,Arkansas,551,Management of companies and enterprises,2012,1252,928213,3292435,1055569,39993
+0400000US05,05,Arkansas,5511,Management of companies and enterprises,2012,1252,928213,3292435,1055569,39993
+0400000US05,05,Arkansas,55111,Management of companies and enterprises,2012,1252,928213,3292435,1055569,39993
+0400000US05,05,Arkansas,551111,Offices of bank holding companies,2012,52,332338,26165,6485,460
+0400000US05,05,Arkansas,551112,Offices of other holding companies,2012,34,207172,28211,9879,283
+0400000US05,05,Arkansas,551114,"Corporate, subsidiary, and regional managing offices",2012,1166,388703,3238059,1039205,39250
+0400000US06,06,California,55,Management of companies and enterprises,2012,5116,14197087,30089818,8107797,276957
+0400000US06,06,California,551,Management of companies and enterprises,2012,5116,14197087,30089818,8107797,276957
+0400000US06,06,California,5511,Management of companies and enterprises,2012,5116,14197087,30089818,8107797,276957
+0400000US06,06,California,55111,Management of companies and enterprises,2012,5116,14197087,30089818,8107797,276957
+0400000US06,06,California,551111,Offices of bank holding companies,2012,59,1148820,17511,5541,254
+0400000US06,06,California,551112,Offices of other holding companies,2012,537,9789833,1011694,265027,11000
+0400000US06,06,California,551114,"Corporate, subsidiary, and regional managing offices",2012,4520,3258434,29060613,7837229,265703
+0400000US08,08,Colorado,55,Management of companies and enterprises,2012,1004,1527616,5635705,1669958,55053
+0400000US08,08,Colorado,551,Management of companies and enterprises,2012,1004,1527616,5635705,1669958,55053
+0400000US08,08,Colorado,5511,Management of companies and enterprises,2012,1004,1527616,5635705,1669958,55053
+0400000US08,08,Colorado,55111,Management of companies and enterprises,2012,1004,1527616,5635705,1669958,55053
+0400000US08,08,Colorado,551111,Offices of bank holding companies,2012,26,294426,37108,13192,283
+0400000US08,08,Colorado,551112,Offices of other holding companies,2012,123,715398,141957,34621,1528
+0400000US08,08,Colorado,551114,"Corporate, subsidiary, and regional managing offices",2012,855,517792,5456640,1622145,53242
+0400000US09,09,Connecticut,55,Management of companies and enterprises,2012,756,D,D,D,k
+0400000US09,09,Connecticut,551,Management of companies and enterprises,2012,756,D,D,D,k
+0400000US09,09,Connecticut,5511,Management of companies and enterprises,2012,756,D,D,D,k
+0400000US09,09,Connecticut,55111,Management of companies and enterprises,2012,756,D,D,D,k
+0400000US09,09,Connecticut,551111,Offices of bank holding companies,2012,9,D,D,D,b
+0400000US09,09,Connecticut,551112,Offices of other holding companies,2012,114,1365008,256689,65223,1679
+0400000US09,09,Connecticut,551114,"Corporate, subsidiary, and regional managing offices",2012,633,241552,4143593,1163317,35598
+0400000US10,10,Delaware,55,Management of companies and enterprises,2012,1009,D,D,D,j
+0400000US10,10,Delaware,551,Management of companies and enterprises,2012,1009,D,D,D,j
+0400000US10,10,Delaware,5511,Management of companies and enterprises,2012,1009,D,D,D,j
+0400000US10,10,Delaware,55111,Management of companies and enterprises,2012,1009,D,D,D,j
+0400000US10,10,Delaware,551111,Offices of bank holding companies,2012,32,D,D,D,b
+0400000US10,10,Delaware,551112,Offices of other holding companies,2012,794,3668535,62896,18578,1622
+0400000US10,10,Delaware,551114,"Corporate, subsidiary, and regional managing offices",2012,183,89833,1396905,361697,14429
+0400000US11,11,District of Columbia,55,Management of companies and enterprises,2012,192,457028,987579,343800,9489
+0400000US11,11,District of Columbia,551,Management of companies and enterprises,2012,192,457028,987579,343800,9489
+0400000US11,11,District of Columbia,5511,Management of companies and enterprises,2012,192,457028,987579,343800,9489
+0400000US11,11,District of Columbia,55111,Management of companies and enterprises,2012,192,457028,987579,343800,9489
+0400000US11,11,District of Columbia,551112,Offices of other holding companies,2012,25,332535,33285,8921,215
+0400000US11,11,District of Columbia,551114,"Corporate, subsidiary, and regional managing offices",2012,167,124493,954294,334879,9274
+0400000US12,12,Florida,55,Management of companies and enterprises,2012,2699,3732556,10644839,2857306,131305
+0400000US12,12,Florida,551,Management of companies and enterprises,2012,2699,3732556,10644839,2857306,131305
+0400000US12,12,Florida,5511,Management of companies and enterprises,2012,2699,3732556,10644839,2857306,131305
+0400000US12,12,Florida,55111,Management of companies and enterprises,2012,2699,3732556,10644839,2857306,131305
+0400000US12,12,Florida,551111,Offices of bank holding companies,2012,45,643856,54457,13246,366
+0400000US12,12,Florida,551112,Offices of other holding companies,2012,375,1807621,357534,85074,3480
+0400000US12,12,Florida,551114,"Corporate, subsidiary, and regional managing offices",2012,2279,1281079,10232848,2758986,127459
+0400000US13,13,Georgia,55,Management of companies and enterprises,2012,1809,2183921,10745263,3045721,114592
+0400000US13,13,Georgia,551,Management of companies and enterprises,2012,1809,2183921,10745263,3045721,114592
+0400000US13,13,Georgia,5511,Management of companies and enterprises,2012,1809,2183921,10745263,3045721,114592
+0400000US13,13,Georgia,55111,Management of companies and enterprises,2012,1809,2183921,10745263,3045721,114592
+0400000US13,13,Georgia,551111,Offices of bank holding companies,2012,61,463363,56295,13981,697
+0400000US13,13,Georgia,551112,Offices of other holding companies,2012,180,965726,202599,53937,2556
+0400000US13,13,Georgia,551114,"Corporate, subsidiary, and regional managing offices",2012,1568,754832,10486369,2977803,111339
+0400000US15,15,Hawaii,55,Management of companies and enterprises,2012,248,D,D,D,i
+0400000US15,15,Hawaii,551,Management of companies and enterprises,2012,248,D,D,D,i
+0400000US15,15,Hawaii,5511,Management of companies and enterprises,2012,248,D,D,D,i
+0400000US15,15,Hawaii,55111,Management of companies and enterprises,2012,248,D,D,D,i
+0400000US15,15,Hawaii,551111,Offices of bank holding companies,2012,1,D,D,D,a
+0400000US15,15,Hawaii,551112,Offices of other holding companies,2012,26,41809,18758,6627,201
+0400000US15,15,Hawaii,551114,"Corporate, subsidiary, and regional managing offices",2012,221,91781,540672,140886,8604
+0400000US16,16,Idaho,55,Management of companies and enterprises,2012,249,D,D,D,i
+0400000US16,16,Idaho,551,Management of companies and enterprises,2012,249,D,D,D,i
+0400000US16,16,Idaho,5511,Management of companies and enterprises,2012,249,D,D,D,i
+0400000US16,16,Idaho,55111,Management of companies and enterprises,2012,249,D,D,D,i
+0400000US16,16,Idaho,551111,Offices of bank holding companies,2012,9,D,D,D,a
+0400000US16,16,Idaho,551112,Offices of other holding companies,2012,35,116921,9002,2423,177
+0400000US16,16,Idaho,551114,"Corporate, subsidiary, and regional managing offices",2012,205,71544,508649,144701,6434
+0400000US17,17,Illinois,55,Management of companies and enterprises,2012,2345,4987834,20634948,6322084,198455
+0400000US17,17,Illinois,551,Management of companies and enterprises,2012,2345,4987834,20634948,6322084,198455
+0400000US17,17,Illinois,5511,Management of companies and enterprises,2012,2345,4987834,20634948,6322084,198455
+0400000US17,17,Illinois,55111,Management of companies and enterprises,2012,2345,4987834,20634948,6322084,198455
+0400000US17,17,Illinois,551111,Offices of bank holding companies,2012,148,503346,85461,21650,1482
+0400000US17,17,Illinois,551112,Offices of other holding companies,2012,226,2037990,466878,137565,3408
+0400000US17,17,Illinois,551114,"Corporate, subsidiary, and regional managing offices",2012,1971,2446498,20082609,6162869,193565
+0400000US18,18,Indiana,55,Management of companies and enterprises,2012,932,1244226,5372107,1714494,55515
+0400000US18,18,Indiana,551,Management of companies and enterprises,2012,932,1244226,5372107,1714494,55515
+0400000US18,18,Indiana,5511,Management of companies and enterprises,2012,932,1244226,5372107,1714494,55515
+0400000US18,18,Indiana,55111,Management of companies and enterprises,2012,932,1244226,5372107,1714494,55515
+0400000US18,18,Indiana,551111,Offices of bank holding companies,2012,54,294331,20482,5770,323
+0400000US18,18,Indiana,551112,Offices of other holding companies,2012,64,253498,35525,9827,642
+0400000US18,18,Indiana,551114,"Corporate, subsidiary, and regional managing offices",2012,814,696397,5316100,1698897,54550
+0400000US19,19,Iowa,55,Management of companies and enterprises,2012,534,891347,1192496,303240,15142
+0400000US19,19,Iowa,551,Management of companies and enterprises,2012,534,891347,1192496,303240,15142
+0400000US19,19,Iowa,5511,Management of companies and enterprises,2012,534,891347,1192496,303240,15142
+0400000US19,19,Iowa,55111,Management of companies and enterprises,2012,534,891347,1192496,303240,15142
+0400000US19,19,Iowa,551111,Offices of bank holding companies,2012,101,359962,33482,8578,567
+0400000US19,19,Iowa,551112,Offices of other holding companies,2012,42,198344,61699,13512,504
+0400000US19,19,Iowa,551114,"Corporate, subsidiary, and regional managing offices",2012,391,333041,1097315,281150,14071
+0400000US20,20,Kansas,55,Management of companies and enterprises,2012,620,1257327,1836567,463881,20038
+0400000US20,20,Kansas,551,Management of companies and enterprises,2012,620,1257327,1836567,463881,20038
+0400000US20,20,Kansas,5511,Management of companies and enterprises,2012,620,1257327,1836567,463881,20038
+0400000US20,20,Kansas,55111,Management of companies and enterprises,2012,620,1257327,1836567,463881,20038
+0400000US20,20,Kansas,551111,Offices of bank holding companies,2012,66,371588,21332,5906,372
+0400000US20,20,Kansas,551112,Offices of other holding companies,2012,54,215182,60475,13449,662
+0400000US20,20,Kansas,551114,"Corporate, subsidiary, and regional managing offices",2012,500,670557,1754760,444526,19004
+0400000US21,21,Kentucky,55,Management of companies and enterprises,2012,708,1000913,2646913,719070,31465
+0400000US21,21,Kentucky,551,Management of companies and enterprises,2012,708,1000913,2646913,719070,31465
+0400000US21,21,Kentucky,5511,Management of companies and enterprises,2012,708,1000913,2646913,719070,31465
+0400000US21,21,Kentucky,55111,Management of companies and enterprises,2012,708,1000913,2646913,719070,31465
+0400000US21,21,Kentucky,551111,Offices of bank holding companies,2012,62,521258,20197,5069,376
+0400000US21,21,Kentucky,551112,Offices of other holding companies,2012,56,104164,38199,10074,664
+0400000US21,21,Kentucky,551114,"Corporate, subsidiary, and regional managing offices",2012,590,375491,2588517,703927,30425
+0400000US22,22,Louisiana,55,Management of companies and enterprises,2012,638,1072347,2202284,709052,25019
+0400000US22,22,Louisiana,551,Management of companies and enterprises,2012,638,1072347,2202284,709052,25019
+0400000US22,22,Louisiana,5511,Management of companies and enterprises,2012,638,1072347,2202284,709052,25019
+0400000US22,22,Louisiana,55111,Management of companies and enterprises,2012,638,1072347,2202284,709052,25019
+0400000US22,22,Louisiana,551111,Offices of bank holding companies,2012,37,269655,19652,5765,281
+0400000US22,22,Louisiana,551112,Offices of other holding companies,2012,65,521289,107110,15625,1308
+0400000US22,22,Louisiana,551114,"Corporate, subsidiary, and regional managing offices",2012,536,281403,2075522,687662,23430
+0400000US23,23,Maine,55,Management of companies and enterprises,2012,213,D,D,D,i
+0400000US23,23,Maine,551,Management of companies and enterprises,2012,213,D,D,D,i
+0400000US23,23,Maine,5511,Management of companies and enterprises,2012,213,D,D,D,i
+0400000US23,23,Maine,55111,Management of companies and enterprises,2012,213,D,D,D,i
+0400000US23,23,Maine,551111,Offices of bank holding companies,2012,5,D,D,D,a
+0400000US23,23,Maine,551112,Offices of other holding companies,2012,21,134773,12613,3378,280
+0400000US23,23,Maine,551114,"Corporate, subsidiary, and regional managing offices",2012,187,170469,714783,199384,9205
+0400000US24,24,Maryland,55,Management of companies and enterprises,2012,1246,D,D,D,l
+0400000US24,24,Maryland,551,Management of companies and enterprises,2012,1246,D,D,D,l
+0400000US24,24,Maryland,5511,Management of companies and enterprises,2012,1246,D,D,D,l
+0400000US24,24,Maryland,55111,Management of companies and enterprises,2012,1246,D,D,D,l
+0400000US24,24,Maryland,551111,Offices of bank holding companies,2012,23,D,D,D,e
+0400000US24,24,Maryland,551112,Offices of other holding companies,2012,85,389384,110012,29569,1309
+0400000US24,24,Maryland,551114,"Corporate, subsidiary, and regional managing offices",2012,1138,596401,4437061,1281369,48939
+0400000US25,25,Massachusetts,55,Management of companies and enterprises,2012,1218,2673867,9913757,2771102,97602
+0400000US25,25,Massachusetts,551,Management of companies and enterprises,2012,1218,2673867,9913757,2771102,97602
+0400000US25,25,Massachusetts,5511,Management of companies and enterprises,2012,1218,2673867,9913757,2771102,97602
+0400000US25,25,Massachusetts,55111,Management of companies and enterprises,2012,1218,2673867,9913757,2771102,97602
+0400000US25,25,Massachusetts,551111,Offices of bank holding companies,2012,32,810873,20074,5947,102
+0400000US25,25,Massachusetts,551112,Offices of other holding companies,2012,126,905503,240991,71302,1926
+0400000US25,25,Massachusetts,551114,"Corporate, subsidiary, and regional managing offices",2012,1060,957491,9652692,2693853,95574
+0400000US26,26,Michigan,55,Management of companies and enterprises,2012,1551,9401909,10083396,2760164,99327
+0400000US26,26,Michigan,551,Management of companies and enterprises,2012,1551,9401909,10083396,2760164,99327
+0400000US26,26,Michigan,5511,Management of companies and enterprises,2012,1551,9401909,10083396,2760164,99327
+0400000US26,26,Michigan,55111,Management of companies and enterprises,2012,1551,9401909,10083396,2760164,99327
+0400000US26,26,Michigan,551111,Offices of bank holding companies,2012,47,268653,24353,6512,525
+0400000US26,26,Michigan,551112,Offices of other holding companies,2012,159,7516410,199937,41048,2164
+0400000US26,26,Michigan,551114,"Corporate, subsidiary, and regional managing offices",2012,1345,1616846,9859106,2712604,96638
+0400000US27,27,Minnesota,55,Management of companies and enterprises,2012,1224,2072984,11237528,2838705,114055
+0400000US27,27,Minnesota,551,Management of companies and enterprises,2012,1224,2072984,11237528,2838705,114055
+0400000US27,27,Minnesota,5511,Management of companies and enterprises,2012,1224,2072984,11237528,2838705,114055
+0400000US27,27,Minnesota,55111,Management of companies and enterprises,2012,1224,2072984,11237528,2838705,114055
+0400000US27,27,Minnesota,551111,Offices of bank holding companies,2012,84,506815,46626,12162,495
+0400000US27,27,Minnesota,551112,Offices of other holding companies,2012,96,568318,112390,35750,958
+0400000US27,27,Minnesota,551114,"Corporate, subsidiary, and regional managing offices",2012,1044,997851,11078512,2790793,112602
+0400000US28,28,Mississippi,55,Management of companies and enterprises,2012,339,563858,549911,136151,7795
+0400000US28,28,Mississippi,551,Management of companies and enterprises,2012,339,563858,549911,136151,7795
+0400000US28,28,Mississippi,5511,Management of companies and enterprises,2012,339,563858,549911,136151,7795
+0400000US28,28,Mississippi,55111,Management of companies and enterprises,2012,339,563858,549911,136151,7795
+0400000US28,28,Mississippi,551111,Offices of bank holding companies,2012,28,306087,20334,4902,386
+0400000US28,28,Mississippi,551112,Offices of other holding companies,2012,25,128904,23238,5202,147
+0400000US28,28,Mississippi,551114,"Corporate, subsidiary, and regional managing offices",2012,286,128867,506339,126047,7262
+0400000US29,29,Missouri,55,Management of companies and enterprises,2012,1223,1559974,6887557,1830052,71330
+0400000US29,29,Missouri,551,Management of companies and enterprises,2012,1223,1559974,6887557,1830052,71330
+0400000US29,29,Missouri,5511,Management of companies and enterprises,2012,1223,1559974,6887557,1830052,71330
+0400000US29,29,Missouri,55111,Management of companies and enterprises,2012,1223,1559974,6887557,1830052,71330
+0400000US29,29,Missouri,551111,Offices of bank holding companies,2012,82,319288,29161,6802,556
+0400000US29,29,Missouri,551112,Offices of other holding companies,2012,95,409091,79478,20127,1077
+0400000US29,29,Missouri,551114,"Corporate, subsidiary, and regional managing offices",2012,1046,831595,6778918,1803123,69697
+0400000US30,30,Montana,55,Management of companies and enterprises,2012,138,115030,193066,50130,3191
+0400000US30,30,Montana,551,Management of companies and enterprises,2012,138,115030,193066,50130,3191
+0400000US30,30,Montana,5511,Management of companies and enterprises,2012,138,115030,193066,50130,3191
+0400000US30,30,Montana,55111,Management of companies and enterprises,2012,138,115030,193066,50130,3191
+0400000US30,30,Montana,551111,Offices of bank holding companies,2012,15,32993,835,294,14
+0400000US30,30,Montana,551112,Offices of other holding companies,2012,17,17255,9608,1870,116
+0400000US30,30,Montana,551114,"Corporate, subsidiary, and regional managing offices",2012,106,64782,182623,47966,3061
+0400000US31,31,Nebraska,55,Management of companies and enterprises,2012,376,465414,1440146,410577,17711
+0400000US31,31,Nebraska,551,Management of companies and enterprises,2012,376,465414,1440146,410577,17711
+0400000US31,31,Nebraska,5511,Management of companies and enterprises,2012,376,465414,1440146,410577,17711
+0400000US31,31,Nebraska,55111,Management of companies and enterprises,2012,376,465414,1440146,410577,17711
+0400000US31,31,Nebraska,551111,Offices of bank holding companies,2012,57,220149,21617,6653,324
+0400000US31,31,Nebraska,551112,Offices of other holding companies,2012,39,95522,33668,9231,401
+0400000US31,31,Nebraska,551114,"Corporate, subsidiary, and regional managing offices",2012,280,149743,1384861,394693,16986
+0400000US32,32,Nevada,55,Management of companies and enterprises,2012,543,D,D,D,j
+0400000US32,32,Nevada,551,Management of companies and enterprises,2012,543,D,D,D,j
+0400000US32,32,Nevada,5511,Management of companies and enterprises,2012,543,D,D,D,j
+0400000US32,32,Nevada,55111,Management of companies and enterprises,2012,543,D,D,D,j
+0400000US32,32,Nevada,551111,Offices of bank holding companies,2012,19,D,D,D,a
+0400000US32,32,Nevada,551112,Offices of other holding companies,2012,194,389789,86968,20705,1003
+0400000US32,32,Nevada,551114,"Corporate, subsidiary, and regional managing offices",2012,330,373249,1340567,367488,16742
+0400000US33,33,New Hampshire,55,Management of companies and enterprises,2012,217,151856,600486,156694,7082
+0400000US33,33,New Hampshire,551,Management of companies and enterprises,2012,217,151856,600486,156694,7082
+0400000US33,33,New Hampshire,5511,Management of companies and enterprises,2012,217,151856,600486,156694,7082
+0400000US33,33,New Hampshire,55111,Management of companies and enterprises,2012,217,151856,600486,156694,7082
+0400000US33,33,New Hampshire,551111,Offices of bank holding companies,2012,6,11898,0,0,0
+0400000US33,33,New Hampshire,551112,Offices of other holding companies,2012,31,74623,15622,3779,187
+0400000US33,33,New Hampshire,551114,"Corporate, subsidiary, and regional managing offices",2012,180,65335,584864,152915,6895
+0400000US34,34,New Jersey,55,Management of companies and enterprises,2012,1419,3892651,16007136,4875590,133484
+0400000US34,34,New Jersey,551,Management of companies and enterprises,2012,1419,3892651,16007136,4875590,133484
+0400000US34,34,New Jersey,5511,Management of companies and enterprises,2012,1419,3892651,16007136,4875590,133484
+0400000US34,34,New Jersey,55111,Management of companies and enterprises,2012,1419,3892651,16007136,4875590,133484
+0400000US34,34,New Jersey,551111,Offices of bank holding companies,2012,22,164971,7734,1957,108
+0400000US34,34,New Jersey,551112,Offices of other holding companies,2012,179,1526865,316033,104379,2933
+0400000US34,34,New Jersey,551114,"Corporate, subsidiary, and regional managing offices",2012,1218,2200815,15683369,4769254,130443
+0400000US35,35,New Mexico,55,Management of companies and enterprises,2012,258,123844,400944,105133,6110
+0400000US35,35,New Mexico,551,Management of companies and enterprises,2012,258,123844,400944,105133,6110
+0400000US35,35,New Mexico,5511,Management of companies and enterprises,2012,258,123844,400944,105133,6110
+0400000US35,35,New Mexico,55111,Management of companies and enterprises,2012,258,123844,400944,105133,6110
+0400000US35,35,New Mexico,551111,Offices of bank holding companies,2012,12,21555,5908,1450,148
+0400000US35,35,New Mexico,551112,Offices of other holding companies,2012,21,44779,7277,2387,110
+0400000US35,35,New Mexico,551114,"Corporate, subsidiary, and regional managing offices",2012,225,57510,387759,101296,5852
+0400000US36,36,New York,55,Management of companies and enterprises,2012,2954,20971148,22233998,7008921,189679
+0400000US36,36,New York,551,Management of companies and enterprises,2012,2954,20971148,22233998,7008921,189679
+0400000US36,36,New York,5511,Management of companies and enterprises,2012,2954,20971148,22233998,7008921,189679
+0400000US36,36,New York,55111,Management of companies and enterprises,2012,2954,20971148,22233998,7008921,189679
+0400000US36,36,New York,551111,Offices of bank holding companies,2012,50,4766071,179161,74601,941
+0400000US36,36,New York,551112,Offices of other holding companies,2012,456,13279921,685878,218561,6268
+0400000US36,36,New York,551114,"Corporate, subsidiary, and regional managing offices",2012,2448,2925156,21368959,6715759,182470
+0400000US37,37,North Carolina,55,Management of companies and enterprises,2012,1757,2080160,8053771,2315609,86993
+0400000US37,37,North Carolina,551,Management of companies and enterprises,2012,1757,2080160,8053771,2315609,86993
+0400000US37,37,North Carolina,5511,Management of companies and enterprises,2012,1757,2080160,8053771,2315609,86993
+0400000US37,37,North Carolina,55111,Management of companies and enterprises,2012,1757,2080160,8053771,2315609,86993
+0400000US37,37,North Carolina,551111,Offices of bank holding companies,2012,17,127771,16558,3812,253
+0400000US37,37,North Carolina,551112,Offices of other holding companies,2012,112,862388,115671,30168,1553
+0400000US37,37,North Carolina,551114,"Corporate, subsidiary, and regional managing offices",2012,1628,1090001,7921542,2281629,85187
+0400000US38,38,North Dakota,55,Management of companies and enterprises,2012,128,198358,327001,90452,4901
+0400000US38,38,North Dakota,551,Management of companies and enterprises,2012,128,198358,327001,90452,4901
+0400000US38,38,North Dakota,5511,Management of companies and enterprises,2012,128,198358,327001,90452,4901
+0400000US38,38,North Dakota,55111,Management of companies and enterprises,2012,128,198358,327001,90452,4901
+0400000US38,38,North Dakota,551111,Offices of bank holding companies,2012,24,108244,7985,1838,106
+0400000US38,38,North Dakota,551112,Offices of other holding companies,2012,17,69441,8814,1576,109
+0400000US38,38,North Dakota,551114,"Corporate, subsidiary, and regional managing offices",2012,87,20673,310202,87038,4686
+0400000US39,39,Ohio,55,Management of companies and enterprises,2012,2179,3462227,14480756,3916042,170648
+0400000US39,39,Ohio,551,Management of companies and enterprises,2012,2179,3462227,14480756,3916042,170648
+0400000US39,39,Ohio,5511,Management of companies and enterprises,2012,2179,3462227,14480756,3916042,170648
+0400000US39,39,Ohio,55111,Management of companies and enterprises,2012,2179,3462227,14480756,3916042,170648
+0400000US39,39,Ohio,551111,Offices of bank holding companies,2012,55,201042,12088,3097,316
+0400000US39,39,Ohio,551112,Offices of other holding companies,2012,193,2077714,308622,93905,4125
+0400000US39,39,Ohio,551114,"Corporate, subsidiary, and regional managing offices",2012,1931,1183471,14160046,3819040,166207
+0400000US40,40,Oklahoma,55,Management of companies and enterprises,2012,607,1527850,3103301,990109,30270
+0400000US40,40,Oklahoma,551,Management of companies and enterprises,2012,607,1527850,3103301,990109,30270
+0400000US40,40,Oklahoma,5511,Management of companies and enterprises,2012,607,1527850,3103301,990109,30270
+0400000US40,40,Oklahoma,55111,Management of companies and enterprises,2012,607,1527850,3103301,990109,30270
+0400000US40,40,Oklahoma,551111,Offices of bank holding companies,2012,60,446276,14497,3639,274
+0400000US40,40,Oklahoma,551112,Offices of other holding companies,2012,50,406116,89454,20049,967
+0400000US40,40,Oklahoma,551114,"Corporate, subsidiary, and regional managing offices",2012,497,675458,2999350,966421,29029
+0400000US41,41,Oregon,55,Management of companies and enterprises,2012,758,932674,3450836,757479,44819
+0400000US41,41,Oregon,551,Management of companies and enterprises,2012,758,932674,3450836,757479,44819
+0400000US41,41,Oregon,5511,Management of companies and enterprises,2012,758,932674,3450836,757479,44819
+0400000US41,41,Oregon,55111,Management of companies and enterprises,2012,758,932674,3450836,757479,44819
+0400000US41,41,Oregon,551111,Offices of bank holding companies,2012,9,32082,887,240,14
+0400000US41,41,Oregon,551112,Offices of other holding companies,2012,64,482561,74152,18207,1020
+0400000US41,41,Oregon,551114,"Corporate, subsidiary, and regional managing offices",2012,685,418031,3375797,739032,43785
+0400000US42,42,Pennsylvania,55,Management of companies and enterprises,2012,2344,3836409,16492975,4568526,165101
+0400000US42,42,Pennsylvania,551,Management of companies and enterprises,2012,2344,3836409,16492975,4568526,165101
+0400000US42,42,Pennsylvania,5511,Management of companies and enterprises,2012,2344,3836409,16492975,4568526,165101
+0400000US42,42,Pennsylvania,55111,Management of companies and enterprises,2012,2344,3836409,16492975,4568526,165101
+0400000US42,42,Pennsylvania,551111,Offices of bank holding companies,2012,57,970102,87409,25372,1325
+0400000US42,42,Pennsylvania,551112,Offices of other holding companies,2012,185,1370548,300330,92135,2791
+0400000US42,42,Pennsylvania,551114,"Corporate, subsidiary, and regional managing offices",2012,2102,1495759,16105236,4451019,160985
+0400000US44,44,Rhode Island,55,Management of companies and enterprises,2012,190,D,D,D,j
+0400000US44,44,Rhode Island,551,Management of companies and enterprises,2012,190,D,D,D,j
+0400000US44,44,Rhode Island,5511,Management of companies and enterprises,2012,190,D,D,D,j
+0400000US44,44,Rhode Island,55111,Management of companies and enterprises,2012,190,D,D,D,j
+0400000US44,44,Rhode Island,551111,Offices of bank holding companies,2012,2,D,D,D,a
+0400000US44,44,Rhode Island,551112,Offices of other holding companies,2012,13,84043,16958,4296,332
+0400000US44,44,Rhode Island,551114,"Corporate, subsidiary, and regional managing offices",2012,175,96647,994939,361813,11658
+0400000US45,45,South Carolina,55,Management of companies and enterprises,2012,631,792982,1839793,471502,20722
+0400000US45,45,South Carolina,551,Management of companies and enterprises,2012,631,792982,1839793,471502,20722
+0400000US45,45,South Carolina,5511,Management of companies and enterprises,2012,631,792982,1839793,471502,20722
+0400000US45,45,South Carolina,55111,Management of companies and enterprises,2012,631,792982,1839793,471502,20722
+0400000US45,45,South Carolina,551111,Offices of bank holding companies,2012,20,175276,4061,1289,60
+0400000US45,45,South Carolina,551112,Offices of other holding companies,2012,63,309100,80583,18456,1252
+0400000US45,45,South Carolina,551114,"Corporate, subsidiary, and regional managing offices",2012,548,308606,1755149,451757,19410
+0400000US46,46,South Dakota,55,Management of companies and enterprises,2012,159,437861,373940,99281,4684
+0400000US46,46,South Dakota,551,Management of companies and enterprises,2012,159,437861,373940,99281,4684
+0400000US46,46,South Dakota,5511,Management of companies and enterprises,2012,159,437861,373940,99281,4684
+0400000US46,46,South Dakota,55111,Management of companies and enterprises,2012,159,437861,373940,99281,4684
+0400000US46,46,South Dakota,551111,Offices of bank holding companies,2012,26,68454,32158,10505,82
+0400000US46,46,South Dakota,551112,Offices of other holding companies,2012,16,227019,35009,12612,350
+0400000US46,46,South Dakota,551114,"Corporate, subsidiary, and regional managing offices",2012,117,142388,306773,76164,4252
+0400000US47,47,Tennessee,55,Management of companies and enterprises,2012,1452,1403777,7705875,2054023,81987
+0400000US47,47,Tennessee,551,Management of companies and enterprises,2012,1452,1403777,7705875,2054023,81987
+0400000US47,47,Tennessee,5511,Management of companies and enterprises,2012,1452,1403777,7705875,2054023,81987
+0400000US47,47,Tennessee,55111,Management of companies and enterprises,2012,1452,1403777,7705875,2054023,81987
+0400000US47,47,Tennessee,551111,Offices of bank holding companies,2012,65,211069,20022,3858,409
+0400000US47,47,Tennessee,551112,Offices of other holding companies,2012,67,243478,51450,12614,766
+0400000US47,47,Tennessee,551114,"Corporate, subsidiary, and regional managing offices",2012,1320,949230,7634403,2037551,80812
+0400000US48,48,Texas,55,Management of companies and enterprises,2012,4475,9218532,34921334,10635080,288253
+0400000US48,48,Texas,551,Management of companies and enterprises,2012,4475,9218532,34921334,10635080,288253
+0400000US48,48,Texas,5511,Management of companies and enterprises,2012,4475,9218532,34921334,10635080,288253
+0400000US48,48,Texas,55111,Management of companies and enterprises,2012,4475,9218532,34921334,10635080,288253
+0400000US48,48,Texas,551111,Offices of bank holding companies,2012,154,2694974,52225,13185,709
+0400000US48,48,Texas,551112,Offices of other holding companies,2012,485,3738839,732108,182217,7435
+0400000US48,48,Texas,551114,"Corporate, subsidiary, and regional managing offices",2012,3836,2784719,34137001,10439678,280109
+0400000US49,49,Utah,55,Management of companies and enterprises,2012,483,D,D,D,j
+0400000US49,49,Utah,551,Management of companies and enterprises,2012,483,D,D,D,j
+0400000US49,49,Utah,5511,Management of companies and enterprises,2012,483,D,D,D,j
+0400000US49,49,Utah,55111,Management of companies and enterprises,2012,483,D,D,D,j
+0400000US49,49,Utah,551111,Offices of bank holding companies,2012,6,D,D,D,a
+0400000US49,49,Utah,551112,Offices of other holding companies,2012,88,298256,70391,21685,1222
+0400000US49,49,Utah,551114,"Corporate, subsidiary, and regional managing offices",2012,389,214613,1598212,434871,21659
+0400000US50,50,Vermont,55,Management of companies and enterprises,2012,97,D,D,D,g
+0400000US50,50,Vermont,551,Management of companies and enterprises,2012,97,D,D,D,g
+0400000US50,50,Vermont,5511,Management of companies and enterprises,2012,97,D,D,D,g
+0400000US50,50,Vermont,55111,Management of companies and enterprises,2012,97,D,D,D,g
+0400000US50,50,Vermont,551111,Offices of bank holding companies,2012,4,D,D,D,c
+0400000US50,50,Vermont,551112,Offices of other holding companies,2012,16,62902,9135,2251,132
+0400000US50,50,Vermont,551114,"Corporate, subsidiary, and regional managing offices",2012,77,64235,140251,33440,2021
+0400000US51,51,Virginia,55,Management of companies and enterprises,2012,1322,1421845,6131955,1900542,62948
+0400000US51,51,Virginia,551,Management of companies and enterprises,2012,1322,1421845,6131955,1900542,62948
+0400000US51,51,Virginia,5511,Management of companies and enterprises,2012,1322,1421845,6131955,1900542,62948
+0400000US51,51,Virginia,55111,Management of companies and enterprises,2012,1322,1421845,6131955,1900542,62948
+0400000US51,51,Virginia,551111,Offices of bank holding companies,2012,29,143969,8137,1957,152
+0400000US51,51,Virginia,551112,Offices of other holding companies,2012,121,598667,102693,28054,995
+0400000US51,51,Virginia,551114,"Corporate, subsidiary, and regional managing offices",2012,1172,679209,6021125,1870531,61801
+0400000US53,53,Washington,55,Management of companies and enterprises,2012,1023,2048070,7626509,1982056,70317
+0400000US53,53,Washington,551,Management of companies and enterprises,2012,1023,2048070,7626509,1982056,70317
+0400000US53,53,Washington,5511,Management of companies and enterprises,2012,1023,2048070,7626509,1982056,70317
+0400000US53,53,Washington,55111,Management of companies and enterprises,2012,1023,2048070,7626509,1982056,70317
+0400000US53,53,Washington,551111,Offices of bank holding companies,2012,18,114158,23096,6250,410
+0400000US53,53,Washington,551112,Offices of other holding companies,2012,111,901639,157039,44754,998
+0400000US53,53,Washington,551114,"Corporate, subsidiary, and regional managing offices",2012,894,1032273,7446374,1931052,68909
+0400000US54,54,West Virginia,55,Management of companies and enterprises,2012,247,447034,370078,97681,4860
+0400000US54,54,West Virginia,551,Management of companies and enterprises,2012,247,447034,370078,97681,4860
+0400000US54,54,West Virginia,5511,Management of companies and enterprises,2012,247,447034,370078,97681,4860
+0400000US54,54,West Virginia,55111,Management of companies and enterprises,2012,247,447034,370078,97681,4860
+0400000US54,54,West Virginia,551111,Offices of bank holding companies,2012,19,37536,5166,1296,149
+0400000US54,54,West Virginia,551112,Offices of other holding companies,2012,26,256802,22977,5467,210
+0400000US54,54,West Virginia,551114,"Corporate, subsidiary, and regional managing offices",2012,202,152696,341935,90918,4501
+0400000US55,55,Wisconsin,55,Management of companies and enterprises,2012,1084,1413394,5928534,1604008,66871
+0400000US55,55,Wisconsin,551,Management of companies and enterprises,2012,1084,1413394,5928534,1604008,66871
+0400000US55,55,Wisconsin,5511,Management of companies and enterprises,2012,1084,1413394,5928534,1604008,66871
+0400000US55,55,Wisconsin,55111,Management of companies and enterprises,2012,1084,1413394,5928534,1604008,66871
+0400000US55,55,Wisconsin,551111,Offices of bank holding companies,2012,90,330473,42461,12527,862
+0400000US55,55,Wisconsin,551112,Offices of other holding companies,2012,107,503498,105636,29268,862
+0400000US55,55,Wisconsin,551114,"Corporate, subsidiary, and regional managing offices",2012,887,579423,5780437,1562213,65147
+0400000US56,56,Wyoming,55,Management of companies and enterprises,2012,87,D,D,D,f
+0400000US56,56,Wyoming,551,Management of companies and enterprises,2012,87,D,D,D,f
+0400000US56,56,Wyoming,5511,Management of companies and enterprises,2012,87,D,D,D,f
+0400000US56,56,Wyoming,55111,Management of companies and enterprises,2012,87,D,D,D,f
+0400000US56,56,Wyoming,551111,Offices of bank holding companies,2012,5,D,D,D,a
+0400000US56,56,Wyoming,551112,Offices of other holding companies,2012,18,12246,3195,707,55
+0400000US56,56,Wyoming,551114,"Corporate, subsidiary, and regional managing offices",2012,64,42301,72425,15480,856

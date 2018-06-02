@@ -1,0 +1,9 @@
+.chartsWrapper{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+svg{
+    background-color: rgba(0,0,0,.5)
+}
