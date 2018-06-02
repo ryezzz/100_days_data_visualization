@@ -1,5 +1,5 @@
 ### Little daily visualizations
 
-[day 1](https://ryezzz.github.io/100_days_data_visualization/day_1/index.html)
+[day 1](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_1)
 
-[day 2](https://ryezzz.github.io/100_days_data_visualization/day_2/index.html)
+[day 2](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_2)
