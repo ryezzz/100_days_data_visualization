@@ -1,0 +1,43 @@
+
+.page {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 2.5% 10% 85% 2.5%;
+  grid-template-areas: ". legendWrapper chartWrapper .";
+
+    /*'chartWrapper chartWrapper chartWrapper chartWrapper chartWrapper chartWrapper chartWrapper legendWrapper';*/
+}
+
+.chartWrapper svg{
+    width: 100%;
+    height: 100%;
+    /*background-color: lightgray;*/
+}
+
+.legendWrapper svg{
+    width: 100%;
+    height: 100%;
+    background-color: darkGray;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .page{
+      grid-template-columns: 100%;
+      grid-template-rows: 100% 10%;
+      grid-template-areas: "chartWrapper"
+                            "legendWrapper";
+
+    }
+}
+
+.legendWrapper{
+    grid-area: legendWrapper;
+}
+.chartWrapper{
+    grid-area: chartWrapper;
+
+}
+
+
