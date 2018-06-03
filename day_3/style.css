@@ -1,0 +1,40 @@
+#chartContainer{
+    /*background-color: blue;*/
+}
+
+#legendContainer {
+    background-color: green;
+}
+
+#gridContainer{
+  /*position: absolute;*/
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-rows: 100%;
+  grid-template-columns: 90% 10%;
+  grid-template-areas: "chartContainer legendContainer";
+}
+
+
+@media only screen and (max-width: 600px) {
+    #gridContainer{
+      position:absolute;
+      height: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 90%;
+      grid-template-areas: "legendContainer"
+                            "chartContainer";
+
+    }
+}
+
+#chartContainer{
+    width: 100%;
+    grid-area: chartContainer;
+}
+
+#legendContainer{
+    width: 100%;
+    grid-area: legendContainer;
+}
