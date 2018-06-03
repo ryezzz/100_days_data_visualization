@@ -1,8 +1,11 @@
 
 .page {
+  padding-top: 10px;
+  position: absolute;
   width: 100%;
-  height: 500px;
+  height: 50%;
   display: grid;
+  grid-rows: 100%;
   grid-template-columns: 2.5% 10% 85% 2.5%;
   grid-template-areas: ". legendWrapper chartWrapper .";
 
@@ -12,20 +15,21 @@
 .chartWrapper svg{
     width: 100%;
     height: 100%;
-    /*background-color: lightgray;*/
+    background-color: #00bdc4 ;
 }
 
 .legendWrapper svg{
     width: 100%;
     height: 100%;
-    background-color: darkGray;
+    background-color: #007a7f;
+    /*background-color: darkGray;*/
 }
 
 
 @media only screen and (max-width: 600px) {
     .page{
       grid-template-columns: 100%;
-      grid-template-rows: 100% 10%;
+      /*grid-template-rows: 100% 10%;*/
       grid-template-areas: "chartWrapper"
                             "legendWrapper";
 

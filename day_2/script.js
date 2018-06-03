@@ -27,21 +27,23 @@ d3.dsv(',', 'data/TOTALSA.csv', function(d) {
 
 
 function renderHeatmap(data) {
-    var margin = {top: 20, right: 10, bottom: 50, left: 500}
+    // var margin = { top: 20, right: 10, bottom: 50, left: 50 },
+        yearArr = d3.map(data, function(d) { return d.year; }).keys()
 
     //variables for the svgs. These need to be created in the render function rather than globally beause of my remove method   
     var chartSVG = d3.selectAll('.chartWrapper').append('svg'),
         legendSvg = d3.selectAll('.legendWrapper').append('svg'),
         width = function returnWidth(itemToMeasure) { return parseInt(d3.select(itemToMeasure.node().parentNode).style('width')) },
         height = function returnHeight(itemToMeasure) { return parseInt(d3.select(itemToMeasure.node().parentNode).style('height')) },
-        widthChart = width(chartSVG),
-        heightChart = height(chartSVG),
-        widthLegend = width(legendSvg)
-        
-        
-        // chartSVG.attr('height', +heightChart-100)
-                // .attr('width', widthChart)
-                // .a('right')
+        widthChart = Math.round(width(chartSVG)),
+        heightChart = Math.round(height(chartSVG)),
+        widthLegend = Math.round(width(legendSvg)),
+        heightLegend = height(legendSvg)
+
+
+    chartSVG.attr('height', heightChart + (heightChart/12))
+            .attr('width', widthChart)
+    // .a('right')
 
     //Responsive Variables
     var tickAttributes = new Object(),
@@ -96,7 +98,7 @@ function renderHeatmap(data) {
 
         var heightRect = d3.scaleBand()
             .domain([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
-            .range([0, heightChart + 1])
+            .range([0, heightChart])
             .padding([.1])
             .paddingInner([0])
 
@@ -116,6 +118,7 @@ function renderHeatmap(data) {
             .attr('fill', function(d) { return 'orange' })
             .attr('opacity', function(d) { return colorScaleChart(d.totalSA) })
     }
+    renderLegend()
 
     renderChart()
 
@@ -123,10 +126,10 @@ function renderHeatmap(data) {
     //Second, render the legend
     function renderLegend() {
 
-
-        legendSvg.attr('width', parseInt(d3.select(legendSvg.node().parentNode).style('width')))
+    legendSvg.attr('height', heightLegend+(heightLegend/12))
+             .attr('width', widthLegend)
+    // legendSvg.attr('width', (heightChart/12))
     }
 
-    renderLegend()
 
 }
