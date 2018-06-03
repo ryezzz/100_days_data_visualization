@@ -27,7 +27,7 @@ d3.dsv(',', 'data/TOTALSA.csv', function(d) {
 
 
 function renderHeatmap(data) {
-
+    var margin = {top: 20, right: 10, bottom: 50, left: 500}
 
     //variables for the svgs. These need to be created in the render function rather than globally beause of my remove method   
     var chartSVG = d3.selectAll('.chartWrapper').append('svg'),
@@ -35,8 +35,13 @@ function renderHeatmap(data) {
         width = function returnWidth(itemToMeasure) { return parseInt(d3.select(itemToMeasure.node().parentNode).style('width')) },
         height = function returnHeight(itemToMeasure) { return parseInt(d3.select(itemToMeasure.node().parentNode).style('height')) },
         widthChart = width(chartSVG),
-        heightChart = Math.floor(height(chartSVG)),
+        heightChart = height(chartSVG),
         widthLegend = width(legendSvg)
+        
+        
+        // chartSVG.attr('height', +heightChart-100)
+                // .attr('width', widthChart)
+                // .a('right')
 
     //Responsive Variables
     var tickAttributes = new Object(),
