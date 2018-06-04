@@ -38,3 +38,31 @@
     width: 100%;
     grid-area: legendContainer;
 }
+
+.hover{
+    fill: black
+}
+
+.tick text {
+    fill: gray;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+.tick line {
+    stroke: lightgray;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+.domain {
+    stroke: gray;
+    stroke-width: .1px;
+}
+
+.tooltip{
+    color: gray;
+    font-family: 'Catamaran', sans-serif;
+    background-color: rgba(255,255,255,.8)
+    
+}
