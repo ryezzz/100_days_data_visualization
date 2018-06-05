@@ -1,8 +1,7 @@
 # Little daily visualizations
 
 ## Day 5: matplotlib
-[<img width="1242" alt="screen shot 2018-06-05 at 7 07 09 pm" src="https://user-images.githubusercontent.com/15457713/41007440-da7080e8-68f3-11e8-87b1-a7ed3ccc2ff8.png">]
-(https://github.com/ryezzz/100_days_data_visualization/tree/master/day_5)
+[<img width="1242" alt="screen shot 2018-06-05 at 7 07 09 pm" src="https://user-images.githubusercontent.com/15457713/41007440-da7080e8-68f3-11e8-87b1-a7ed3ccc2ff8.png">](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_5)
 
 ## Day 4: node/d3
 [<img width="446" alt="screen shot 2018-06-04 at 8 55 29 pm" src="https://user-images.githubusercontent.com/15457713/40948994-b42e5ee2-6839-11e8-9f63-df72833def07.png">](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_4)
