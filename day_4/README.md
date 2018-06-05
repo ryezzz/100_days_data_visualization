@@ -1,0 +1,1 @@
+Today I focused on separating my data cleaning from front end: I created a node program to digest and output my thesis data (World Bank and Vegetation). I ran into asynchronicity issues that I didn't have time to work through. 
