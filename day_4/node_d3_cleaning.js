@@ -18,7 +18,7 @@ files.forEach(function(url) {
     //Parse/clean the data on first load: this needs to be conditional because it's specific to the datasets
     promises.push(csv(url, function(d) {
         if (d.date) {
-            
+
             return {
                 //averaging year only
                 date: d.date.split('-')[2],
@@ -40,50 +40,43 @@ files.forEach(function(url) {
 //Complete the promise and render chart
 Promise.all(promises).then(function(data) {
 
- var gdp = []
- var productivity = []
- var combo
- 
-function one(){    
-   
-    
+    var gdp = []
+    var productivity = []
+    var combo = new Object
     var worldBank = data[1]
     var ndvi = d3.nest()
-                    .key(function(d){return d.date; }) //NB: use "d.year", not "year"
-                    .rollup(function(v) { return d3.mean(v, function(d) { return d.ndvi; }); })
-                    .entries(data[0]);
-//move object generation to promises    
-    worldBank.forEach(function(d){
-      var newObj = new Object()
-      var newObj2 = new Object()
-      newObj.key = d.date
-      newObj.value = d.gdp
-      newObj2.key = d.date
-      newObj2.value = d.productivity
-      console.log(newObj2)
-      gdp.push(newObj)
-      productivity.push(newObj2)
+        .key(function(d) { return d.date; }) //NB: use "d.year", not "year"
+        .rollup(function(v) { return d3.mean(v, function(d) { return d.ndvi; }); })
+        .entries(data[0]);
+    //move object generation to promises    
+    worldBank.forEach(function(d) {
+        var newObj = new Object()
+        var newObj2 = new Object()
+        newObj.key = d.date
+        newObj.value = d.gdp
+        newObj2.key = d.date
+        newObj2.value = d.productivity
+        console.log(newObj2)
+        gdp.push(newObj)
+        productivity.push(newObj2)
+    })
+   
+    combo.gdp = gdp
+    combo.productivity = productivity
+    combo.ndvi = ndvi
+    
+    return combo
+    
+}).then(function(data) {
+    
+    fs.writeFile('data/ndvi.json', JSON.stringify(data.ndvi, null, 2), 'utf-8');
+    fs.writeFile('data/productivity.json', JSON.stringify(data.productivity, null, 2), 'utf-8');
+    fs.writeFile('data/gdp.json', JSON.stringify(data.ndvi, null, 2), 'utf-8');
+
 })
 
-}
-    // change all values to key/value pairs
-    // all data is the same for small multiples
-function two (){
-   fs.writeFile('data/ndvi.json', JSON.stringify(ndvi, null, 2) , 'utf-8');
-   fs.writeFile('data/productivity.json', JSON.stringify(gdp, null, 2) , 'utf-8');
-   fs.writeFile('data/gdp.json', JSON.stringify(productivity, null, 2) , 'utf-8');
-}
-
-function manin(){
-one().then(two)
-}
-    
-});
-
-    // saveData(worldBank)
 
 
-function saveData(data) {
-    
-   
-}
+
+
+// change all values to key/value pairs

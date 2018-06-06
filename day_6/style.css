@@ -1,3 +1,7 @@
+div{
+    width: 100%;
+}
+
 body{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 -ms-touch-action: manipulation;
@@ -38,12 +42,12 @@ touch-action: manipulation;
     }
 }
 
-#chartContainer{
+#chart{
     width: 100%;
     grid-area: chartContainer;
 }
 
-#legendContainer{
+#legend{
     width: 100%;
     grid-area: legendContainer;
 }
@@ -72,7 +76,7 @@ touch-action: manipulation;
 .tooltip{
     color: gray;
     font-family: 'Catamaran', sans-serif;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(242,242,242,.8);
     padding: 5px;
     
 }
