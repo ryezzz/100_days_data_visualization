@@ -1,5 +1,7 @@
 # Little daily visualizations
 
+## Day 7: D3
+
 ## Day 6: D3
 [<img width="399" alt="screen shot 2018-06-06 at 6 57 38 pm" src="https://user-images.githubusercontent.com/15457713/41069345-801be6b4-69bb-11e8-8716-d8b2ea2870cc.png">](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_6)
 
