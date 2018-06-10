@@ -99,13 +99,14 @@ function render(groupByYear, groupByMonth) {
         circles
             .transition()
             .delay(100)
-            .duration(100)
+            .duration(300)
             .attr('cx',
                 function(d) {
                     return xScale(d[changingVar])
                 })
             .attr('cy', function(d) { return yScale(d.value) })
             .attr('r', chartHeight/250)
+            .style('opacity', .2)
 
 
 
