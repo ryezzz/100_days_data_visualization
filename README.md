@@ -1,6 +1,7 @@
 # Little daily visualizations
 
 ## Day 10: D3
+[<img width="505" alt="screen shot 2018-06-10 at 7 05 07 pm" src="https://user-images.githubusercontent.com/15457713/41207294-8366acea-6ce1-11e8-8d5c-47c4c0bd516d.png">](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_10)
 
 ## Day 9: D3
 
