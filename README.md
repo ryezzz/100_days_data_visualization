@@ -1,5 +1,11 @@
 # Little daily visualizations
 
+## Day 10: D3
+
+## Day 9: D3
+
+## Day 8: D3
+
 ## Day 7: D3
 
 ## Day 6: D3
