@@ -88,9 +88,9 @@ function render(groupByMonth, groupByYear) {
             .attr("cx", function(d) { return x(d.month); })
             .attr("cy", function(d) { return 10; })
 
-            // cell.append("path")
-            //     .style('stroke', 'black')
-            //     .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+            cell.append("path")
+                .style('stroke', 'black')
+                .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
 
 
     }
