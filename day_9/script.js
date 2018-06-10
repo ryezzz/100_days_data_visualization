@@ -26,7 +26,7 @@ d3.dsv(',', 'data/DGS10.csv', function(d) {
 var chartSvg = d3.select('#chart')
     .append('svg')
 
-var chargG = chartSvg
+var chartG = chartSvg
     .append('g')
 
 var legendSvg = d3.select('#legend')
@@ -52,56 +52,67 @@ function render(groupByMonth, groupByYear) {
     //Stuff that will change on window resize
     function responsiveUpdatedVariables() {
 
-        var chartWidth = returnParentWidth(chartSvg),
+        var chartWidth = returnParentWidth(chartSvg) / 2,
             chartHeight = returnParentHeight(legendSvg)
 
         chartSvg.attr('height', chartHeight)
-        chartSvg.attr('width', chartWidth/2)
+        chartSvg.attr('width', chartWidth)
 
         var x = d3.scaleTime()
-        .domain(d3.extent(groupByMonth, function(d) { return d.month; }))
-        .range([0, chartWidth]);
+            .range([0, chartWidth]);
 
+        x.domain(d3.extent(groupByMonth, function(d) { return d.month; }))
 
-        var simulation = d3.forceSimulation(groupByYear)
-            .force("x", d3.forceX(function(d) { return x(d.month); }).strength(1))
+        var simulation = d3.forceSimulation(groupByMonth)
+            .force("x", d3.forceX(function(d) { return x(d.month); }).strength(10))
             .force("y", d3.forceY(chartHeight / 2))
-            .force("collide", d3.forceCollide(1))
+            .force("collide", d3.forceCollide(10))
             .stop();
 
-        for (var i = 0; i < 120; ++i) simulation.tick();
+        for (var i = 0; i < groupByMonth.length; ++i) simulation.tick();
 
-        // chargG.append("g")
-        //     .attr("class", "axis axis--x")
-        //     .attr("transform", "translate(0," + chartHeight + ")")
+        chartG.append("g")
+            .attr("class", "axis axis--x")
+            .attr("transform", "translate(0," + chartHeight + ")")
 
-                
-                var polygons = cell
-                .selectAll("g").data(d3.voronoi()
+
+           polygons.data(d3.voronoi()
                 .extent([0, chartWidth])
-                .x(function(d) { return d.x; })
-                .y(function(d) { return d.y; })
-                .polygons(groupByMonth)).enter().append("g");
+                .x(function(d) { return d.month; })
+                .y(function(d) { return 10; })
+                .polygons(groupByMonth))
+            ;
 
-            cell.selectAll("circle")
-            .data(groupByMonth)
-            .enter()
-            .append("circle")
-                .data(groupByMonth)
-                .attr("r", 3)
-                .attr("cx", function(d) { return x(d.month); })
-                .attr("cy", function(d) { return 10; })
-        
-        //     cell.append("path")
-        //         .data(groupByMonth)
-        //         .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+        circle
+            .attr("r", 3)
+            .attr("cx", function(d) { return x(d.month); })
+            .attr("cy", function(d) { return 10; })
 
+            // cell.append("path")
+            //     .style('stroke', 'black')
+            //     .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+
+
+    }
+
+
+    var cell = chartG.append("g")
+        .attr('class', 'cell')
+
+    var polygons = cell
+            .selectAll("g")
+            
         
-            }
-     var cell = chargG.append("g") 
-              .attr('class','cell')
+        
+    var circle =
+        cell.selectAll("circle")
+        .data(groupByMonth)
+        .enter()
+        .append("circle")
+        .data(groupByMonth)
+
     responsiveUpdatedVariables()
-   
+polygons.enter().append("g")
 
     ////Stuff that will change on button click
     function changingData(changingVariables) {
