@@ -98,7 +98,6 @@ function render(groupByYear, groupByMonth) {
         // Change circle width on resize
         circles
             .transition()
-            .delay(100)
             .duration(300)
             .attr('cx',
                 function(d) {
@@ -106,7 +105,6 @@ function render(groupByYear, groupByMonth) {
                 })
             .attr('cy', function(d) { return yScale(d.value) })
             .attr('r', chartHeight/250)
-            .style('opacity', .2)
 
 
 
