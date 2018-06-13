@@ -1,5 +1,11 @@
 # Little daily visualizations
 
+## Day 12: D3
+[<img width="881" alt="screen shot 2018-06-13 at 12 39 56 am" src="https://user-images.githubusercontent.com/15457713/41330589-679be8fa-6ea2-11e8-977f-b64373cfe8dc.png">](https://ryezzz.github.io/100_days_data_visualization/day_12/index.html)
+
+
+## Day 11: D3
+
 ## Day 10: D3
 [<img width="505" alt="screen shot 2018-06-10 at 7 05 07 pm" src="https://user-images.githubusercontent.com/15457713/41207294-8366acea-6ce1-11e8-8d5c-47c4c0bd516d.png">](https://github.com/ryezzz/100_days_data_visualization/tree/master/day_10)
 
