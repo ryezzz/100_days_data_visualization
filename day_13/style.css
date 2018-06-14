@@ -1,0 +1,84 @@
+div{
+    width: 100%;
+}
+
+body{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+
+}
+
+#chartContainer{
+    /*background-color: blue;*/
+}
+
+#legendContainer {
+    background-color: lightgray;
+}
+
+#gridContainer{
+  margin-top: 2%;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-rows: 100%;
+  grid-template-columns: 100% 0%;
+  grid-template-areas: "chartContainer legendContainer";
+}
+
+
+@media only screen and (max-width: 600px) {
+    #gridContainer{
+      margin-top: 0;
+      position:absolute;
+      height: 90%;
+      grid-template-columns: 100%;
+      grid-template-rows: 0% 100%;
+      grid-template-areas: "legendContainer"
+                            "chartContainer";
+
+    }
+}
+
+#chart{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    grid-area: chartContainer;
+}
+
+#legend{
+    width: 100%;
+    grid-area: legendContainer;
+}
+
+.hover{
+    fill: black
+}
+
+.tick text {
+    fill: gray;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+.tick line {
+    stroke: lightgray;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 12px;
+}
+
+.domain {
+    stroke: gray;
+    stroke-width: .1px;
+}
+
+.tooltip{
+    color: gray;
+    font-family: 'Catamaran', sans-serif;
+    background-color: rgba(242,242,242,.8);
+    padding: 5px;
+    
+}
