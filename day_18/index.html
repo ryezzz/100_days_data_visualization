@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,500" rel="stylesheet">
+
+  <link rel='stylesheet' href='bootstrap/bootstrap.min.css'>
+
+  <link rel='stylesheet' href='style.css'>
+
+</head>
+
+
+
+<body>
+  <div id = "fixed">
+  <div class='wrapper'>
+    <div class="gridBigTitle">
+      <h1>Collective Decision-Making in Cockroaches</h1>
+    </div>
+
+    <div class="gridSubtitle"><a class="linkroach" href="http://www.pnas.org/content/103/15/5835.full.pdf">Based on the 2006 study “Collegial decision making based on social amplification leads to optimal group formation”</a>
+    </div>
+    <div class="gridNumShelters">
+      <label for="r">Number of Shelters</label>
+      <input type="range" min=2 max=10 step=1 class="allOptions" id="shelterNumberInput" value=5 oninput="selected_shelter_value = shelterNumberInput.value">
+      <output name="selected_year" id="shelterOutput">5</output>
+    </div>
+    <div class="gridNumRoaches">
+      <label for="r">Cockroaches</label>
+      <input type="range" min=3 max=1000 step=1 class="allOptions" id="cockroachNumberInput" value=500 oninput="selected_cockroach_value = cockroachNumberInput.value">
+      <output name="selected_year" id="roachOutput">500</output>
+    </div>
+    <div class="gridCapacity">
+      <label for="r">Shelter Capacity</label>
+      <input type="range" min=1 max=100 step=1 id="capacityNumberInput" value=50 oninput="selected_capacity_value = capacityNumberInput.value">
+      <output name="selected_year" id="capacityOutput">50</output>
+    </div>
+  </div>
+  <div class='wrapper2'>
+  <div class="gridGeneratedText" id="generatedText">
+    If <span id="roachNumberText" class="uniqueInput"></span>cockroaches are given a choice of <span id="shelterNumberText" class="uniqueInput"></span> shelters that can fit <span id="roachcapacityText" class="uniqueInput"></span> insects, <span id="forceNumberOverallText"> they
+        will choose to stay both tightly clustered and evenly divided in <span id="forceNumberText" class="uniqueInput"></span> shelters.</span>
+  </div>
+  </div>
+  </div>
+  test
+</body>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="script.js"></script>
+
+
+
+</html>
