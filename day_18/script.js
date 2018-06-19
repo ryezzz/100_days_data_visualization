@@ -246,7 +246,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
     function mousemoved() {
         var fixed = document.getElementById('containgSVG');
-        var input = document.getElementsByClassName('input');
 
   fixed.addEventListener('touchmove', function(event) {
     console.log(event.source);
