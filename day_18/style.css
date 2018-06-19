@@ -66,18 +66,18 @@ div {
 
 svg {
     position: absolute;
-    /*padding-top: 20%;*/
+    margin-top: 0%;
     z-index: 1;
 }
 
 #generatedText {
     z-index: 0;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: #696d72;
     position: absolute;
     z-index: 0;
-    margin-top: 2%;
+    margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -87,7 +87,7 @@ shelter {
     width: 100%;
 }
 
-h1 {
+.gridBigTitle {
     max-width: 100%;
     font-size: 20px;
     padding-top: 1%;
@@ -209,7 +209,7 @@ input[type=range]:focus::-ms-fill-upper {
     grid-gap: 0px;
     grid-template-columns: repeat(12, 1fr);
     /*grid-template-rows: 40px auto 40px;*/
-    grid-template-areas: "b b b b b b s s s s s s" 
+    grid-template-areas: "b b b b b b b b b b b b" 
                          "h h h h h h h h h h h h"
                          "r r r r r r r r r r r r"
                          "c c c c c c c c c c c c";
@@ -219,9 +219,16 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 
+.gridSubtitle {
+    grid-area: s;
+    line-height: 1;
+    display:none;
+}
 
 
-@media only screen and (min-width: 720px) {
+
+
+@media only screen and (min-width: 800px) {
     .wrapper {
     display: grid;
     grid-gap: 0px;
@@ -234,19 +241,34 @@ input[type=range]:focus::-ms-fill-upper {
     margin-left: 20px;
     margin-right: 20px;
     }
+    
+    #generatedText {
+        font-size: 30px;
+        margin-top: 7%;
+
+    }
+    
+    .gridBigTitle{
+        font-size: 30
+        
+    }
+    
+    .gridSubtitle {
+     display: block;
+    }
 }
 
 
+.gridBigTitle{
+        font-size: 8px;
+        
+}
 
 .gridBigTitle {
     grid-area: b;
 }
 
 
-.gridSubtitle {
-    grid-area: s;
-    line-height: 1;
-}
 
 .gridNumShelters {
     grid-area: h;

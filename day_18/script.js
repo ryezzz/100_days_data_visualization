@@ -97,9 +97,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
     var roachSizeSmall = shelterSize / Math.sqrt(roachcapacity * 1.9);
 
-    // var roachSizeSmall = shelterSize / 13;
-
-    // var roachSizeLarge = shelterSize / 13;
 
     var allTestValues = [];
 
@@ -140,7 +137,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
 
     function checkIfForceLargerThanshelter() {
-        // var forceNumberOverallText = d3.select('#forceNumberOverallText')
         var forceforcheck = makeOddEven(roachNumber) / d3.max(testForMax)
         if (forceforcheck < shelterNumber) {
             d3.select('#forceNumberOverallText')
@@ -188,7 +184,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
             radius: 3,
             // type: i,
             x: (i + .6) * (width * 1.1 / shelterNumber),
-            y: height / 2
+            y: height / 1.5
         };
     });
 
@@ -201,7 +197,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
             radius: shelterSize,
             type: i,
             x: (i + .6) * (width * 1.1 / shelterNumber),
-            y: height / 2
+            y: height / 1.5
         };
     });
 
@@ -217,9 +213,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         .attr("width", window.innerWidth)
         .attr("height", window.innerHeight)
         .attr("id", "containgSVG")
-        // .attr("x", 300)
-        // .attr("y", 100)
-
         .on("mousemove", mousemoved)
         .on("touchmove", mousemoved);
 
@@ -237,7 +230,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
 
     force.start();
-    //600 -250
 
     var nodeNumberArr = [];
 
@@ -254,13 +246,10 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
     function mousemoved() {
         var fixed = document.getElementById('containgSVG');
-// fixed.addEventListener('touchmove', function(e) {
-//         e.preventDefault();
-// }, false);
+        var input = document.getElementsByClassName('input');
 
   fixed.addEventListener('touchmove', function(event) {
     console.log(event.source);
-    //if (event.source == document.body)
       event.preventDefault();
   }, {
     passive: false,
@@ -288,8 +277,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         if (nodeNumberArr.length <= roachNumber) {
             svg.append("circle")
                 .data([node])
-                // .attr("cx", function(d) { return d.x; })
-                // .attr("cy", function(d) { return d.y; })
+
                 .attr("r", function(d) { return d.radius - 2; })
                 .style("fill", function(d) { return "#70cbd3"; })
                 .transition()
