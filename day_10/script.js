@@ -5,7 +5,7 @@ var parseDate = d3.timeParse("%Y-%m-%d");
 d3.dsv(',', 'data/DGS10.csv', function(d) {
     // console.log(d)
     var dateArr = d.DATE.split('-');
-    if (+d.DGS10 && dateArr[0] > 2008) {
+    if (+d.DGS10 && dateArr[0] > 2012) {
         return {
             date: parseDate(d.DATE),
             month: dateArr[1],
@@ -126,12 +126,12 @@ function render(groupByYear, groupByMonth) {
         if (checkVal) {
             checkVal = false
             var passVar = "month"
-            buttonOne.text("Monthly Aggregate of 10-Year Treasury Constant Maturity Rate")
+            buttonOne.text("Monthly Aggregate of 10-Year Treasury Constant Maturity Rate 2013-2018")
         }
         else {
             checkVal = true
             passVar = "date"
-            buttonOne.text("10-Year Treasury Constant Maturity Rate")
+            buttonOne.text("10-Year Treasury Constant Maturity Rate 2013-2018")
         }
 
 
