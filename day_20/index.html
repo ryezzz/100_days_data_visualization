@@ -4,6 +4,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,400,600" rel="stylesheet">
@@ -41,19 +42,19 @@
 
 
 
-
         </div>
         <!--<div class = "dataSummary">This is a data summary</div>-->
         <div class="chartsContainer" id="chartsContainer">
-            <div class="title">
-                Socioeconomic and Vegetation Shifts in Malawi.
-            </div>
+            
+                <div class="title">
+                    Socioeconomic and Vegetation Shifts in Malawi.
+                </div>
+    
+                <div class="mapLabelSub">
+                    NDVI, GDP per capita growth anual percentage, and agriculture value added per worker.
+                </div>
 
-            <div class="mapLabelSub">
-                NDVI, GDP per capita growth anual percentage, and agriculture value added per worker.
-            </div>
-
-
+            <div class = 'buttonsAndInput'>
             <div class='buttons'>
                 <button id="stop" class='fas fa-stop'></button>
                 <button id="start" class='fas fa-play'></button>
@@ -62,11 +63,10 @@
             <input type="range" class="dateRange" id="timeSlider" min="1991" max="2017" step="1">
             <div class="dateRangeTicks">
             </div>
-
+            </div>
             <div class="lineChartsDiv" id="lineChartsDiv">
                 <i class='fas fa-info-circle'></i>
             </div>
-            <link rel="stylesheet" type="text/css" href="styles.css">
             <script type="text/javascript" src="3scriptRestructured.js"></script>
             <!--<script type="text/javascript" src="scatterplot.js"></script>-->
             <div class="scatterplotWrapper">
