@@ -5,10 +5,11 @@ var parseDate = d3.timeParse("%Y-%m-%d");
 d3.dsv(',', 'data/DGS10.csv', function(d) {
     // console.log(d)
     var dateArr = d.DATE.split('-');
-    if (+d.DGS10) {
+    if (+d.DGS10 && dateArr[0] > 2008) {
         return {
             date: parseDate(d.DATE),
             month: dateArr[1],
+            year: dateArr[0],
             key: parseYear(dateArr[0]),
             value: +d.DGS10
         }
@@ -16,6 +17,10 @@ d3.dsv(',', 'data/DGS10.csv', function(d) {
 
 }).then(function(data) {
     var groupByTime = data
+    var groupByYear = d3.nest()
+        .key(function(d) { return d.year; })
+        .entries(data);
+        
     var groupByMonth = d3.nest()
         .key(function(d) { return d.month; })
         .entries(data);
@@ -35,7 +40,6 @@ var legendSvg = d3.select('#legend')
     .append('svg')
 
 var buttonOne = d3.select('#buttonOne')
-    .text('Sort By Month')
 
 
 function returnParentHeight(itemToMeasure) {
@@ -53,7 +57,7 @@ function render(groupByYear, groupByMonth) {
 
 
     //Stuff that won't change
-    chartSvg.style('background-color', 'lightgray')
+    // chartSvg.style('background-color', 'lightgray')
 
     var xScale = d3.scaleTime()
     // .domain(d3.extent(groupByYear, function(d){return d.date}))
@@ -93,7 +97,7 @@ function render(groupByYear, groupByMonth) {
         // Change overall xScale on resize
         xScale.range([0, chartWidth])
 
-        yScale.range([0, chartHeight])
+        yScale.range([chartHeight, 0])
 
         // Change circle width on resize
         circles
@@ -122,12 +126,12 @@ function render(groupByYear, groupByMonth) {
         if (checkVal) {
             checkVal = false
             var passVar = "month"
-            buttonOne.text("Sort By Year")
+            buttonOne.text("Monthly Aggregate of 10-Year Treasury Constant Maturity Rate")
         }
         else {
             checkVal = true
             passVar = "date"
-            buttonOne.text("Sort By Month")
+            buttonOne.text("10-Year Treasury Constant Maturity Rate")
         }
 
 
