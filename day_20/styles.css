@@ -106,7 +106,6 @@ body, html{
   margin-left: -3px;
 }
 
-    /*display: grid;*/
 
 .title{
   font-size: 30px;
@@ -124,7 +123,7 @@ body, html{
 
     .title{
       width: 90%;
-      font-size: 35px;
+      font-size: 23px;
       line-height: 33px;
       margin-bottom: 10px;
     }
@@ -132,7 +131,7 @@ body, html{
 .chartsContainer{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 2% 8% 70%;
+  grid-template-rows: 5% 5% 8% 70%;
   grid-template-areas: "title"
                       "mapLabelSub" 
                       "buttonsAndInput"
@@ -151,7 +150,7 @@ body, html{
   
     .title{
       width: 90%;
-      font-size: 25px;
+      font-size: 20px;
       line-height: 30px;
       margin-bottom: 10px;
     }

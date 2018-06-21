@@ -131,7 +131,11 @@ button {
   " . button . "
   " chartContainer chartContainer chartContainer"
   "text text text";
+    grid-template-rows: 15% 51% 36%;
+
 }
+
+
 
 button{
      font-size: 15px;

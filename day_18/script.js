@@ -175,7 +175,8 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
     d3.select('#forceNumberText')
         .text(" " + forceNumber + " ");
 
-
+    var newY = height / 1.6;
+    
     var nodes = d3.range(forceNumber).map(function(i) {
         console.log(i)
         return {
@@ -184,7 +185,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
             radius: 3,
             // type: i,
             x: (i + .6) * (width * 1.1 / shelterNumber),
-            y: height / 1.5
+            y: newY
         };
     });
 
@@ -197,7 +198,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
             radius: shelterSize,
             type: i,
             x: (i + .6) * (width * 1.1 / shelterNumber),
-            y: height / 1.5
+            y: newY
         };
     });
 
@@ -210,8 +211,8 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         .on("tick", ticked);
 
     var svg = d3.select("body").append("svg")
-        .attr("width", window.innerWidth)
-        .attr("height", window.innerHeight)
+        .attr("width", window.innerWidth*.95)
+        .attr("height", window.innerHeight*.8)
         .attr("id", "containgSVG")
         .on("mousemove", mousemoved)
         .on("touchmove", mousemoved);
@@ -338,7 +339,6 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         
         
     }
-
 
 
 }
