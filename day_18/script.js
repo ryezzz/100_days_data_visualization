@@ -222,10 +222,13 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         .data(shelterNodes)
         .enter().append("circle")
         .attr("class", "containingCircle")
+        .style("opacity", 0)
         .attr("r", function(d) { return d.radius; })
         .style("stroke", function(d) { return "#dbdbdb"; })
-        .style("opacity", .5)
-        .style("stroke-width", function(d) { return 3; });
+        .style("stroke-width", function(d) { return 3; })
+        .transition()
+        .duration(5)
+        .style("opacity", .5);
 
 
     svg
@@ -277,15 +280,20 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         if (nodeNumberArr.length <= roachNumber) {
             svg.append("circle")
                 .data([node])
-
+                .style('opacity', 0)
                 .attr("r", function(d) { return d.radius - 2; })
                 .style("fill", function(d) { return "#70cbd3"; })
+                .transition()
+                .duration(50)
+                .style('opacity', 1)
                 .transition()
                 .delay(100000)
                 .attr("r", 1e-6)
                 .each("end", function() { nodes.splice(6, 1); })
+            
                 .remove();
             nodes.push(node);
+            
             force.resume();
         }
     }
@@ -293,7 +301,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
     function ticked(e) {
         var q = d3.geom.quadtree(nodes),
-            k = e.alpha * 0.1,
+            k = e.alpha * 0.09,
             i = 0,
             n = nodes.length,
             o;
@@ -314,7 +322,7 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
 
     function collide(node) {
-        var r = node.radius + 10,
+        var r = node.radius +3,
             nx1 = node.x - r,
             nx2 = node.x + r,
             ny1 = node.y - r,
