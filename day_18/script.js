@@ -215,8 +215,8 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         .attr("height", window.innerHeight*.8)
         .attr("id", "containgSVG")
         .on("mousemove", mousemoved)
-        .on("touchmove", mousemoved);
-
+        .on("touchmove", mousemoved)
+        .style('opacity', 0);
 
     var containingCircle = svg.selectAll(".containingCircle")
         .data(shelterNodes)
@@ -228,8 +228,8 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         .style("stroke-width", function(d) { return 3; });
 
 
-
-
+    svg
+    .style('opacity', 1);
     force.start();
 
     var nodeNumberArr = [];
@@ -308,8 +308,8 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
         }
 // What is D? THIS IS WHERE THE PROBLEM HAPPENS: 
         svg.selectAll("circle")
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
+            .attr("cx", function(d) { if (d.x*1){return d.x} else {return -3000} })
+            .attr("cy", function(d) { if (d.x*1){return d.y }else {return -3000}});
     }
 
 
