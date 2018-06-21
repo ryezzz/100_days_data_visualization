@@ -126,7 +126,7 @@ function render(groupByYear, groupByMonth) {
         if (checkVal) {
             checkVal = false
             var passVar = "month"
-            buttonOne.text("Monthly Aggregate of 10-Year Treasury Constant Maturity Rate 2013-2018")
+            buttonOne.text("Monthly Aggregate: 10-Year Treasury Constant Maturity Rate 2013-2018")
         }
         else {
             checkVal = true
