@@ -74,6 +74,7 @@ div {
 svg {
     position: absolute;
     margin-top: 0%;
+    margin-left: -3%;
     z-index: 1;
 }
 
@@ -408,6 +409,9 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 @media only screen and (min-width: 800px) {
+  svg{
+      margin-left: 0%;
+  }
     .wrapper {
     display: grid;
     grid-gap: 0px;
@@ -434,6 +438,7 @@ input[type=range]:focus::-ms-fill-upper {
     
     .gridSubtitle {
      display: block;
+     margin-left: 20px;
     }
     
     .gridBigTitle {
@@ -450,6 +455,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .gridBigTitle {
     grid-area: b;
+    margin-left: 20px;
 }
 
 

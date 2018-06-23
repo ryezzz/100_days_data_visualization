@@ -1,6 +1,6 @@
 
 
-var width = window.innerWidth / 1.2,
+var width = window.innerWidth / 1.24,
     height = window.innerHeight / 1.1;
 
 
@@ -174,8 +174,18 @@ function render(shelterNumberInput, roachNumberInput, capacityNumberInput) {
 
     d3.select('#forceNumberText')
         .text(" " + forceNumber + " ");
+  
+    
+    function phoneHeight(height){
+        if (height<610){
+            return height / 1.9
+        } else {
+            return height / 1.6
+        }
+    }
+    
 
-    var newY = height / 1.6;
+    var newY = phoneHeight(height);
     
     var nodes = d3.range(forceNumber).map(function(i) {
         console.log(i)
