@@ -74,7 +74,7 @@ div {
 svg {
     position: absolute;
     margin-top: 0%;
-    margin-left: -3%;
+    margin-left: -6%;
     z-index: 1;
 }
 
@@ -85,7 +85,6 @@ svg {
     color: #696d72;
     position: absolute;
     z-index: 0;
-    margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -107,6 +106,10 @@ shelter {
 
 rect {
     fill: black;
+}
+
+#generatedText{
+  margin-top: 10%;
 }
 
 label,
@@ -404,7 +407,6 @@ input[type=range]:focus::-ms-fill-upper {
     line-height: 1;
     display:none;
 }
-
 
 
 
