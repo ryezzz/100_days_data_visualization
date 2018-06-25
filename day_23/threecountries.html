@@ -1,0 +1,396 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quintiles</title>
+    <!--<link rel="stylesheet" href="./style.css" type="text/css" />-->
+     <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <style> 
+    
+    
+    
+       body{
+      font-family: 'Alegreya Sans', sans-serif;
+      		  		    max-width: 100%;
+      		  		    
+      background-color: #f4f8ff;
+      
+        -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+
+    }
+    
+    button:focus {
+    outline:none;
+}
+    
+ button{
+     font-weight: 200;
+ }
+    /* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    /*font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    font-size: 15px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+    
+    body{
+      font-family: 'Alegreya Sans', sans-serif;
+      		  		    max-width: 100%;
+      		  		    
+      background-color: #f4f8ff;
+
+
+    }
+    
+    
+    
+    #stickyheader {
+    width:100%;
+    position:fixed;
+    top:0px;
+    background-color: white;
+    z-index: 1;
+}
+    
+    /*OVERLAY START*/
+ .overlaytest{
+ 	    visibility: hidden;
+
+ 	margin-top: 10%;
+ 	float: left;
+ }   
+ .overlay {
+ 	margin-top: 3%;
+    height: 33%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    
+    
+    /*background-color: rgb(0,0,0);*/
+    /*background-color: rgba(255,255,255, 0.9);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#intropage{
+  padding-top: 25%;
+  height: 100%;
+}
+
+.overlay-content {
+	padding-left: 10%;
+    position: relative;
+    top: 25%;
+    width: 33%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+    
+    
+    /*OVERLAY END*/
+    
+    
+    
+    
+    
+    .invisible{
+        visibility: hidden;
+    }
+    
+    .tick text { 
+      fill: #a5acb7;
+      font-size: 12;
+    }
+    
+    
+    .miniTitles { 
+      fill: #a5acb7;
+      font-size: 15;
+    }
+    
+    .increasedDecreasedHighlight{
+        /*font-weight: 800;*/
+        /*background-color: yellow;*/
+    }
+    
+    svg * {
+			/*cursor: pointer;*/
+			/*border-bottom: 1px solid black;*/
+		}
+		
+		.statictitle{
+		  /*float: left;*/
+		  font-size: 1.5vw;
+		  color: #a5acb7;	
+		  border-bottom: lightgray solid 1px;
+		  font-family: 'Source Sans Pro', sans-serif;
+
+		  		  		    /*max-width: 100%;*/
+
+		  		    /*text-decoration: underline;*/
+		  		    /*padding-top: 100px;*/
+/*float: left;*/
+		}
+		
+		.title{
+		  		  		    /*max-width: 100%;*/
+
+		    /*padding-top:20px;*/
+		    /*border-top: lightgray solid 1px;*/
+		  		  /*padding-bottom: 10%;*/
+
+		}
+		
+		#mainTitle{
+		  		    font-family: 'Source Sans Pro', sans-serif;
+		  		    /*background-color: #c9d1dd;*/
+		  		    margin-bottom:2%;
+		  		    font-weight:200;
+		  		    color: black;
+              font-size: 30px;
+
+		}
+		
+		.lineDiv {
+			width: 100%;
+			height: 10px;
+		border-bottom: 1px #c9d1dd solid;
+		}
+		#mainTitleRow2{
+		  		    font-family: 'Source Sans Pro', sans-serif;
+		  		    background-color: #c9d1dd;
+		  		    margin-bottom:2%;
+		  		    font-weight:300;
+		  		    color: white;
+              font-size: 12px;
+
+		}
+		
+		.container{
+		  max-width: 100%;
+		  padding-left: 10%;
+		  padding-right: 10%;
+		}
+		
+		.innerText{
+		    font-size: 1vw;
+		}
+		
+
+		#togglingTitle, .tempTitle {
+		  padding-top: 20px;
+		  /*font-size: 100px;*/
+		  /*color: #707070;*/
+		}
+		
+		.tempTitle {
+	        color: #a5acb7;
+	        /*visibility: hidden;*/
+	    }
+		
+		.container{
+		  /*border-bottom: #c9d1dd solid 1px;*/
+		}
+		
+		.domain{
+		    stroke: none
+		}
+		
+		line{
+		    stroke: #c9d1dd
+		}
+
+    .div:nth-child(odd){
+      background-color:#ededed;
+      /*padding:20px;*/
+    }
+    
+    .container {
+     padding-right: 0px; 
+     padding-left: 0px; 
+     margin-right: 0; 
+     margin-left: 5%; 
+}
+    
+
+    </style>
+
+</head>
+  <body>
+  	
+  	
+ 
+      
+      
+    <div class = "container" id = "mainTitle">
+      <div class = "row" id = "maintitlerow">
+        <div class="col-12">How have income categories changed in 
+        
+                <div class="dropdown">
+  <button class="">Burkina Faso, Ghana and Tanzania</button>?
+  <div class="dropdown-content">
+    <a href="index.html">Sub-Saharan Africa</a>
+  </div>
+            
+            
+            
+            
+        </div>
+      </div>
+
+    <script src="./threecountries.js" type="text/javascript"></script>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+      </div>
+      </div>
+
+
+ 
+
+ <div class = "lineDiv">  </div>
+ 
+  <div class = "container" id = "footerinfo">
+      <div class = "row" id = "maintitlerow">
+        <div class="col-2"></div>
+ <div class="col-8">      	
+<p></p><span class = 'staticTitle'>Abstract:</span></p>
+
+<p>This visualization focuses on income quintile trends in Ghana, Burkina Faso and Tanzania. These countries were chosen to represent three different types of inequality trends on the African continent: Ghana shows rising inequality, Burkina Faso falling, and Tanzania an inverted u-shaped ∩ inequality trend.
+</p>
+<p>
+Income quintiles are illustrated by two charts: a stacked bar chart to represent change in proportion of each country’s total income, and a positive/negative bar chart to illustrate percentage change. Text is generated from the data as the user interacts with the graphs.
+</p>
+
+<p>The World Development Indicators data used for this visualization are incomplete, so starting and ending years are different for each country. This created a challenge when trying to design a comparative visualization.
+</p>
+<p>This was coded in D3.js by Rye Zupancis with the incorporation of Mike Bostock’s templates listed below.
+</p>
+<p></p><span class = "staticTitle">Sources:</span></p>
+
+Odusola, Ayodele, Radhika Lal, Rogers Dhliwayo, Isiyaka Sabo, and James Neuhaus. "Country context matters in promoting equity: Drivers of inequality are heterogeneous in Burkina Faso, Ghana and Tanzania." Income Inequality Trends in sub-Saharan Africa: Divergence, Determinants, and Consequences, 2017.
+
+<p></p>
+
+“World Development Indicators Data Bank.” http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators
+
+
+<p></p>
+
+Mike Bostock. "Stacked Area Chart." https://bl.ocks.org/mbostock/3885211
+
+<p></p>
+
+
+Mike Bostock. "Bar Chart With Negative Values." https://bl.ocks.org/mbostock/79a82f4b9bffb69d89ae
+
+ </div>       	
+        <div class="col-2"></div>	
+        	
+
+  </body>
+
+  
+   
+</html>
