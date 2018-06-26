@@ -33,6 +33,7 @@ var wrapper = svgScatter.append("g").attr("class", "chordWrapperYear")
 
 
 function renderScatterplotMonths(data){
+	
 
 //////////////////////////////////////////////////////
 ///////////// Initialize Axes & Scales ///////////////
