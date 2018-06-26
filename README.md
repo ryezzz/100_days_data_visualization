@@ -1,4 +1,6 @@
 # Little daily visualizations
+## Days 13 - 24
+Conversion of old projects to mobile, and creating a react framework for new portfolio site.
 
 ## Day 12: D3
 [<img width="881" alt="screen shot 2018-06-13 at 12 39 56 am" src="https://user-images.githubusercontent.com/15457713/41330589-679be8fa-6ea2-11e8-977f-b64373cfe8dc.png">](https://ryezzz.github.io/100_days_data_visualization/day_12/index.html)
