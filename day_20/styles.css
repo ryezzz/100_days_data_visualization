@@ -402,7 +402,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tick line {
     stroke: white;
-    /*opacity: 0;*/
+    opacity: 0;
     /*stroke-width: 2px;*/
 }
 /*  TIMELINE SLIDER TICKS */

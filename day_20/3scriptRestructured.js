@@ -105,7 +105,7 @@ function loopThrough(year) {
                 .attr('class', 'not') //style with a custom class and CSS
                 .attr('stroke', "none")
                 .style('opacity', '.3')
-                .style('stroke-width', .5 + 'px');
+                // .style('stroke-width', .5 + 'px');
 
             d3.selectAll('g.tick')
                 .filter(function(d) {
@@ -123,37 +123,37 @@ function loopThrough(year) {
 }
 
 
-var overlay = d3.selectAll('.openingOverlay')
-overlay.style('width', window.innerWidth+'px')
-overlay.style('right', 0 +'px')
-// overlay.style('height', window.innerHeight+50+'px')
-//       .style('border-right', 'solid .5px gray')
-// overlay.style('right', 0+'px')
-// 				overlay.on('click', function(){
+// var overlay = d3.selectAll('.openingOverlay')
+// overlay.style('width', window.innerWidth+'px')
+// overlay.style('right', 0 +'px')
+// // overlay.style('height', window.innerHeight+50+'px')
+// //       .style('border-right', 'solid .5px gray')
+// // overlay.style('right', 0+'px')
+// // 				overlay.on('click', function(){
 				    
-// 					overlay
+// // 					overlay
+// // 					.transition()
+// // 					.duration(500)
+// // 					.style('right', '95%')	
+// // 				})
+
+
+
+//  overlay.on('click',function(){
+//           var active  = overlay.active ? false : true,
+//               newRight = active ? '0px' : window.innerWidth - 50 + 'px';
+//               newRight = active ? window.innerWidth - 50 + 'px' : '0px';
+            
+//             overlay
 // 					.transition()
 // 					.duration(500)
-// 					.style('right', '95%')	
-// 				})
+// 					.style('right', newRight)
+// 					.style('border-right', 'dashed .5px gray')
+// 					.style('width', window.innerWidth)
 
-
-
- overlay.on('click',function(){
-          var active  = overlay.active ? false : true,
-              newRight = active ? '0px' : window.innerWidth - 50 + 'px';
-              newRight = active ? window.innerWidth - 50 + 'px' : '0px';
-            
-            overlay
-					.transition()
-					.duration(500)
-					.style('right', newRight)
-					.style('border-right', 'dashed .5px gray')
-					.style('width', window.innerWidth)
-
-            overlay.active = active;
+//             overlay.active = active;
                     
-         })
+//          })
 
 
 
