@@ -1,4 +1,3 @@
-//create responsive method so I'm not calling functions/is reusable
 var fixed = document.getElementById('lineChartsDiv');
 
   fixed.addEventListener('touchmove', function(event) {
@@ -104,9 +103,9 @@ function loopThrough(year) {
             d3.selectAll('g.tick')
                 .select('line') //grab the tick line
                 .attr('class', 'not') //style with a custom class and CSS
-                .style('stroke', "white")
+                .attr('stroke', "none")
                 .style('opacity', '.3')
-                // .style('stroke-width', .1 + 'px');
+                .style('stroke-width', .5 + 'px');
 
             d3.selectAll('g.tick')
                 .filter(function(d) {
@@ -667,5 +666,3 @@ d3.csv("data/malawi_landsat_5_7_8_1990-2018.csv").then(function(data) {
 
 
 });
-
-

@@ -191,8 +191,11 @@ body, html{
 /*  filter: blur(20px);*/
 /*}*/
 
-
+#legend{
+  display: none
+}
 .openingOverlay{
+  display:none;
   position: absolute;
   /*margin-top: -50px;*/
   width: 100%;
@@ -399,7 +402,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tick line {
     stroke: white;
-    opacity: 0;
+    /*opacity: 0;*/
     /*stroke-width: 2px;*/
 }
 /*  TIMELINE SLIDER TICKS */
