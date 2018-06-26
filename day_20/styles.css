@@ -27,37 +27,32 @@ body, html{
 #gridContainer{
       padding-top: 2%;
 
-    display: grid;
-  position: absolute;
+display: flex;
+position: relative;
   width: 100%;
   height: 100%;
-  grid-template-columns:5% 40% 50% 5%;
-  grid-template-rows: 100%;
-  grid-template-areas: ". imagesContainer chartsContainer .";
+
 }
 
 .imagesContainer{
-   position: absolute;
-    height:95%;
-    width: 100%;
+  margin-left: 2.5%;
+  order: 1;
+    height:100%;
+    width: 45%;
     z-index: 1;
-    grid-area: imagesContainer;
-    /*border: red solid 2px ;*/
+
   
 }
 
 .chartsContainer{
-   position: absolute;
+  margin-left: 2.5%;
+  order: 2;
+  align-self:stretch;
     height:100%;
-    width: 100%;
+    width: 45%;
     z-index: 2;
     grid-area: chartsContainer;
 
-    /*display: grid;*/
-  /*  grid-template-columns:5% 40% 50% 5%;*/
-  /*grid-template-rows: 100%;*/
-  /*grid-template-areas: ". imagesContainer chartsContainer .";*/
-    /*border: blue solid 2px ;*/
   
 }
 .chartsContainer{
@@ -73,6 +68,7 @@ body, html{
 
 .chartDiv{
   width: 100%;
+  height: 100%;
   grid-area: chartDiv;
 }
 
@@ -116,7 +112,7 @@ body, html{
   color: #cecece;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 800px) {
 .mapLabelSub{
   font-size: 10px;
   /*visibility:hidden;*/
@@ -129,8 +125,13 @@ body, html{
       line-height: 33px;
       margin-bottom: 10px;
     }
-    
+.imagesContainer{
+  position: absolute;
+  width: 100%;
+}
 .chartsContainer{
+  position: absolute;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 5% 5% 8% 70%;
@@ -157,10 +158,16 @@ body, html{
       margin-bottom: 10px;
     }
     
-    .mapLabelSub{
-      visibility: hidden
+    .not {
+ /*stroke-width: .2px ;*/
+ opacity: 0;
+ /*stroke: white*/
+}
+    
+    /*.mapLabelSub{*/
+    /*  visibility: hidden*/
       
-    }
+    /*}*/
     
     .chartsContainer{
   grid-template-rows: 10% 0% 10% 90%;
@@ -280,7 +287,7 @@ html {
 img{
     position:absolute;
     margin-left: 10%;
-    height: 100%;
+    height: 90%;
     opacity: 0;
     z-index: 0;
 }
@@ -301,14 +308,14 @@ img{
 
 input[type=range] {
   -webkit-appearance: none;
-  /*width: 100%;*/
-  /*margin: 8.95px 0;*/
+  width: 100%;
+  margin: 8.95px 0;
 }
 input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  /*width: 100%;*/
+  width: 100%;
   height: 3.1px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
@@ -400,11 +407,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size: 12px;
 }
 
-.tick line {
-    stroke: white;
-    opacity: 0;
-    /*stroke-width: 2px;*/
-}
+
 /*  TIMELINE SLIDER TICKS */
 .timelineTicks .tick text {
     fill: #cecece;
@@ -679,7 +682,21 @@ cursor: pointer;
   /*background-color: white;*/
 }
 
-.highlighted{
- stroke-width: 1.5px ;
+.tick line {
+ stroke-width: .2px ;
  opacity: 1;
+ stroke: white
+}
+
+.not{
+ stroke-width: .2px ;
+ opacity: 1;
+ stroke: white
+
+}
+.highlighted{
+ stroke-width: 4px !important;
+ opacity: 1 !important;
+ stroke: green !important
+ /*opacity: 1;*/
 }

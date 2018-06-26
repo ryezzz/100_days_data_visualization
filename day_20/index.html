@@ -4,7 +4,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,400,600" rel="stylesheet">
@@ -22,18 +22,18 @@
 <body>
     <!--<div id = "legend"></div>-->
     <div class="openingOverlay">
-        <div class = "openingText">
-            <p class = 'paragraph'>The following visualization analyzes the green levels from <span class = 'emphasize'>5,492 satellite images</span> in order to see the relationship between vegetation, agricultural subsidies, GDP and productivity in <span class = 'emphasize'>Malawi, Africa.</span></p>
+        <div class="openingText">
+            <p class='paragraph'>The following visualization analyzes the green levels from <span class='emphasize'>5,492 satellite images</span> in order to see the relationship between vegetation, agricultural subsidies, GDP and productivity in <span class='emphasize'>Malawi, Africa.</span></p>
             </br>
 
-        <p class = 'paragraph'>It was created under the advisement of the UNDP Regional Bureau for Africa and with the use of Google Earth Engine.</p>
+            <p class='paragraph'>It was created under the advisement of the UNDP Regional Bureau for Africa and with the use of Google Earth Engine.</p>
             </br>
-        </div>       
+        </div>
         <!--<i class='fas fa-info-circle'></i>-->
     </div>
 
     <div id='gridContainer'>
-               <span class="mapTitle">Vegetation index (NDVI)</span>
+        <span class="mapTitle">Vegetation index (NDVI)</span>
         <span class="mapTitle" id="mapTitleDate">2004</span>
 
 
@@ -45,25 +45,26 @@
         </div>
         <!--<div class = "dataSummary">This is a data summary</div>-->
         <div class="chartsContainer" id="chartsContainer">
+
+            <div class="title">
+                Socioeconomic and Vegetation Shifts in Malawi.
+            </div>
+
+            <div class="mapLabelSub">
+                NDVI, GDP per capita growth anual percentage, and agriculture value added per worker.
+            </div>
+
+            <div class='buttonsAndInput'>
+                <div class='buttons'>
+                    <button id="stop" class='fas fa-stop'></button>
+                    <button id="start" class='fas fa-play'></button>
+
+                </div>
+                <input type="range" class="dateRange" id="timeSlider" min="1991" max="2017" step="1">
+                <div class="dateRangeTicks">
+                </div>
+            </div>
             
-                <div class="title">
-                    Socioeconomic and Vegetation Shifts in Malawi.
-                </div>
-    
-                <div class="mapLabelSub">
-                    NDVI, GDP per capita growth anual percentage, and agriculture value added per worker.
-                </div>
-
-            <div class = 'buttonsAndInput'>
-            <div class='buttons'>
-                <button id="stop" class='fas fa-stop'></button>
-                <button id="start" class='fas fa-play'></button>
-
-            </div>
-            <input type="range" class="dateRange" id="timeSlider" min="1991" max="2017" step="1">
-            <div class="dateRangeTicks">
-            </div>
-            </div>
             <div class="lineChartsDiv" id="lineChartsDiv">
                 <i class='fas fa-info-circle'></i>
             </div>
@@ -73,7 +74,7 @@
                 <div class="scatterplotTitle"></div>
                 <div class="scatterTooltip"></div>
                 <div class="scatterplotWrapperMonths"></div>
-                
+
                 <script type="text/javascript" src="scatterplot.js"></script>
             </div>
 
@@ -82,7 +83,7 @@
 
     <!--<script type="text/javascript" src="3scriptRestructured.js"></script>-->
 </body>
-    
+
 
 
 

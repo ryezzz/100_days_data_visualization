@@ -103,8 +103,8 @@ function loopThrough(year) {
             d3.selectAll('g.tick')
                 .select('line') //grab the tick line
                 .attr('class', 'not') //style with a custom class and CSS
-                .attr('stroke', "none")
-                .style('opacity', '.3')
+                // .attr('stroke', "#000")
+                // .style('opacity', '.3')
                 // .style('stroke-width', .5 + 'px');
 
             d3.selectAll('g.tick')
@@ -114,8 +114,8 @@ function loopThrough(year) {
                 })
                 .select('line') //grab the tick line
                 .attr('class', 'highlighted') //style with a custom class and CSS
-                .style('stroke', '#6dc925')
-                .style('opacity', '1')
+                // .style('stroke', '#6dc925')
+                // .style('opacity', '1')
                 // .style('stroke-width', .1 + 'px');
         })
 
@@ -327,12 +327,12 @@ function renderlinechart(data) {
         .attr('class', 'tick')
         .call(d3.axisBottom(x).ticks(responsive.ticks(data.length)).tickFormat(d3.timeFormat("%y")).tickSize(customSize(height, 15)));
     axisx.selectAll("text")
-        .style("fill", "black")
+        .style("opacity", 0)
 
-    axisx.selectAll("line")
-        .style("stroke", function() {
-            return 'white'
-        });
+    // axisx.selectAll("line")
+    //     .style("stroke", function() {
+    //         return 'white'
+    //     });
 
     axisx
         .attr('text-anchor', "middle")
@@ -657,9 +657,9 @@ d3.csv("data/malawi_landsat_5_7_8_1990-2018.csv").then(function(data) {
 
         renderlinechart(gdp);
         renderlinechart(agriculture);
-         d3.selectAll('g.tick')
-                .select('line') //grab the tick line
-                .style('opacity', .3)
+        //  d3.selectAll('g.tick')
+        //         .select('line') //grab the tick line
+        //         .style('opacity', 1)
         
         
     });
