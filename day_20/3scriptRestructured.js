@@ -41,10 +41,10 @@ responsive.height = function(baseHeight) {
 var minResponsive = 795
 var baseHeight = window.innerHeight/3.8;
 // var baseWidth = window.innerWidth * 4/8
-var width = parseInt(d3.select('#chartsContainer').style('width'))*.92
+var width = parseInt(d3.select('#chartsContainer').style('width'))*.98
 
 // var width = window.innerWidth * 4/10;
-var height = parseInt(d3.select('#chartsContainer').style('height'))*.25
+var height = parseInt(d3.select('#chartsContainer').style('height'))*.27
 var margin = { top: 0, right: 0, bottom: 0, left: 40 }
 // var sliderFreeInput = document.getElementById("timeSlider");
 
@@ -61,7 +61,8 @@ function createLegend(){
     var legend = d3.select('#legend')
                    .append('svg')
                    .attr('width', 100)
-                   .attr('height', 0)
+                   .attr('height', 100)
+                   .style('fill', 'white')
         
         legend.selectAll('rect')
               .data(colors)
@@ -72,6 +73,8 @@ function createLegend(){
               .style('fill', 'white')
     
 }   
+
+
 
 createLegend()
 
@@ -258,7 +261,7 @@ var parseTime = d3.timeParse("%y");
 var parseTime2 = d3.timeParse("%Y");
 
 var x = d3.scaleTime()
-    .rangeRound([15, width-margin.left-5]);
+    .rangeRound([20, width-margin.left-5]);
 
 var y = d3.scaleLinear()
     .rangeRound([height-15, +10]);
@@ -325,14 +328,15 @@ function renderlinechart(data) {
     var axisx = g.append('g')
         .data(data)
         .attr('class', 'tick')
-        .call(d3.axisBottom(x).ticks(responsive.ticks(data.length)).tickFormat(d3.timeFormat("%y")).tickSize(customSize(height, 15)));
+        .call(d3.axisBottom(x).ticks(data.length).tickFormat(d3.timeFormat("%y")).tickSize(customSize(height, 15)));
     axisx.selectAll("text")
-        .style("opacity", 0)
+        .style("opacity", "0")
 
-    // axisx.selectAll("line")
-    //     .style("stroke", function() {
-    //         return 'white'
-    //     });
+    axisx.selectAll("line")
+        .style("stroke", function() {
+            return 'white'
+        })
+        .style("opacity", .1)
 
     axisx
         .attr('text-anchor', "middle")
@@ -501,7 +505,7 @@ function renderlinechart(data) {
     var gdp = d3.selectAll(".chartDivGDP")
     var productivity = d3.selectAll(".chartDivAgri_val_added_per_worker")
     var scatterPlotWrapper = d3.selectAll('.scatterplotWrapper')
-        .style('opacity', 0);
+        // .style('display', "block");
         
         
 
@@ -510,6 +514,7 @@ function renderlinechart(data) {
            var active  = gdp.active ? false : true,
                newOpacity = active ? 0 : 1,
                newDisplay = active ? "none" : "block",
+               newDisplayReverse = active ? "block" : "none",
                newOpacityReverse = active ? 1 : 0;
                  
                  d3.selectAll(".chartsContainer")
@@ -528,8 +533,8 @@ function renderlinechart(data) {
             scatterPlotWrapper
             // .transition()
                         // .delay(100)
-
-            .style('opacity', newOpacityReverse)
+            .style('display', newDisplayReverse)
+            // .style('opacity', newOpacityReverse)
             gdp.active = active;
 
                     

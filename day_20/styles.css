@@ -25,6 +25,7 @@ body, html{
 }
 
 #gridContainer{
+  margin-left: 5%;
       padding-top: 2%;
 
 display: flex;
@@ -35,30 +36,28 @@ position: relative;
 }
 
 .imagesContainer{
-  margin-left: 2.5%;
   order: 1;
     height:100%;
-    width: 45%;
+    width: 40%;
     z-index: 1;
 
   
 }
 
 .chartsContainer{
-  margin-left: 2.5%;
   order: 2;
   align-self:stretch;
     height:100%;
-    width: 45%;
+    width: 40%;
     z-index: 2;
     grid-area: chartsContainer;
 
   
 }
 .chartsContainer{
-  display: grid;
+  display: igrid;
   grid-template-columns: 100%;
-  grid-template-rows: 5% 5% 5% 85%;
+  grid-template-rows: auto auto auto 90%;
   grid-template-areas: "title"
                       "mapLabelSub" 
                       "buttonsAndInput"
@@ -80,7 +79,7 @@ position: relative;
 .title{
   width: 100%;
   grid-area: title;
-  line-height: 30px;
+  line-height: 25px;
 
 }
 
@@ -92,11 +91,10 @@ position: relative;
 .mapLabelSub{
   color: gray;
   grid-area: mapLabelSub;
+  font-size: 12px
 }
 
-.mapLabelSub, .title{
-  margin-left: 48px
-}
+
 .buttons{
   position: absolute;
   z-index: 4;
@@ -106,24 +104,39 @@ position: relative;
 
 
 .title{
-  font-size: 30px;
+  font-size: 28px;
   font-weight: lighter;
-  margin-bottom: 20px;
   color: #cecece;
 }
 
+@media only screen and (max-width: 1300px) {
+  #gridContainer{
+    margin-left: 0px
+  }
+.imagesContainer{
+  width: 40%;
+  /*margin-right: 10%;*/
+}
+
+.chartsContainer{
+  width:60%;
+  margin-left: 5%
+}
+}
+
+
 @media only screen and (max-width: 800px) {
-.mapLabelSub{
-  font-size: 10px;
-  /*visibility:hidden;*/
+    #gridContainer{
+      width: 100%;
+    }
+    
+    .mapLabelSub{
+  font-size: 12px;
 }
 
 
     .title{
-      width: 90%;
       font-size: 23px;
-      line-height: 33px;
-      margin-bottom: 10px;
     }
 .imagesContainer{
   position: absolute;
@@ -134,72 +147,31 @@ position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 5% 5% 8% 70%;
   grid-template-areas: "title"
                       "mapLabelSub" 
                       "buttonsAndInput"
                       "chartDiv"
-    /*border: blue solid 2px ;*/
 }
-}
-
-
-@media only screen and (max-width: 800px) {
-    #gridContainer{
-      display: block;
-      width: 100%;
-      margin-left: 0%;
-    }
-  
-    .title{
-      width: 90%;
-      font-size: 20px;
-      line-height: 30px;
-      margin-bottom: 10px;
-    }
-    
-    .not {
- /*stroke-width: .2px ;*/
- opacity: 0;
- /*stroke: white*/
 }
     
-    /*.mapLabelSub{*/
-    /*  visibility: hidden*/
-      
-    /*}*/
-    
-    .chartsContainer{
-  grid-template-rows: 10% 0% 10% 90%;
 
-    /*border: blue solid 2px ;*/
-}
+    
+
+
 
 
 .mapTitle{
   color: white;
-  left: 30%;
   z-index: 5;
   top: 85%;
 }
     
-}
-
-/*#chart{*/
-/*    position: absolute;*/
-/*    height:100%;*/
-/*    width: 100%;*/
-/*    z-index: 1;*/
-/*    grid-area: chartContainer;*/
-/*}*/ 
 
 
-/*.openingOverlay::before {*/
-/*  filter: blur(20px);*/
-/*}*/
 
 #legend{
-  display: none
+  positon: absolute;
+  z-index: 15;
 }
 .openingOverlay{
   display:none;
@@ -238,15 +210,6 @@ html {
     user-select: none;
 }
 
-/*.imagesContainer {*/
-    /*padding-top: 40px;*/
-/*    position:absolute;*/
-/*    width: 50%;*/
-/*    height: 100%;*/
-/*    left: 15%;*/
-/*    background-color: black;*/
-/*    z-index: 0;*/
-/*}*/
 
 
 
@@ -258,8 +221,7 @@ html {
   margin-top: 10px;
   margin-left: 8px;
   z-index: -1;
-  /*top: 10px;*/
-  /*left: 25%;*/
+
 }
 
 .label {
@@ -268,20 +230,11 @@ html {
 }
 
 .chartsContainer {
-  /*display: inline;*/
-  /*width: 100%;*/
-  /*  position:absolute;*/
-  /*  margin-left: 45%;*/
-  /*  width: 100%;*/
-  /*  height: 100%;*/
-  /*  margin-top:1%;*/
     background-color: rgba(0,0,0,.5);
 }
 
 
-.lineChartsDiv{
-  /*margin-top: 20px;*/
-}
+
 
 
 img{
@@ -434,33 +387,12 @@ input {border:0; outline:none;}
 
 
 #start:hover, #stop:hover {
-    /*font-size: 15px;*/
-    /*position:absolute;*/
-    /*margin-top: 7px;*/
-    /*color: black;*/
-    /*background-color: black;*/
-    /*border: 0;*/
+
 cursor: pointer;
 -webkit-text-fill-color: gray;
 
 }
 
-/*#stop {*/
-/*    position: absolute;*/
-/*    margin-top: 10px;*/
-/*    color: black;*/
-/*    background-color: black;*/
-/*    -webkit-text-fill-color: white;*/
-/*    border: 0;*/
-/*}*/
-
-/*#start {*/
-/*    -webkit-text-fill-color: #6dc925;*/
-/*} */
-
-/*#stop {*/
-/*    -webkit-text-fill-color: white;*/
-/*} */
 
 #start:focus{
     /*background: gray!important;*/
@@ -503,29 +435,7 @@ cursor: pointer;
   display: none;
 }
 
-/*g .tick text {*/
-/*  fill: white;*/
-/*}*/
 
-
-
-/*.mapLabel{*/
-/*  font-size: 25px;*/
-/*  font-weight: bold;*/
-/*  color: white;*/
-/*  z-index: 2;*/
-/*  padding-bottom: 10px;*/
-  /*left: 90%;*/
-/*}*/
-
-/*.mapLabelSub{*/
-/*  font-size: 14px;*/
-/*  font-weight: lighter;*/
-/*  color: gray;*/
-/*  margin-top: -30px;*/
-/*  margin-left: 40px;*/
-
-/*}*/
 
 .dataSummary{
   position:absolute;
@@ -549,7 +459,7 @@ cursor: pointer;
 
 
 .scatterplotWrapper{
-  /*display:none;*/
+  display:none;
   /*position: absolute;*/
   /*top: 0%;*/
   width: 100%;
@@ -616,13 +526,8 @@ cursor: pointer;
 
 @media only screen and (max-width: 725px) {
     .chartsContainer {
-    /*position:absolute;*/
-    /*left: 0%;*/
-    /*width: 90%;*/
-    /*height: 100%;*/
-    /*margin-left:5%;*/
-    /*margin-right:5%;*/
-    /*margin-top:5%;*/
+    margin-left: 5%;
+    width: 90%;
     background-color: rgba(0,0,0,.5);
     }
     
@@ -659,19 +564,6 @@ cursor: pointer;
 }
 
 
-.stickyheader{
-  /*position: fixed;*/
-  /*z-index: 3*/
-}
-
-
-.lineChartsDiv div{
-  
-  /*margin-bottom: 1%;*/
-  
-}
-
-
 .fa-info-circle{
   font-size: 15px;
   position: absolute;
@@ -682,21 +574,20 @@ cursor: pointer;
   /*background-color: white;*/
 }
 
-.tick line {
- stroke-width: .2px ;
- opacity: 1;
- stroke: white
-}
+/*.tick line {*/
+/* stroke-width: .2px ;*/
+/* opacity: .5;*/
+/* stroke: white*/
+/*}*/
 
-.not{
- stroke-width: .2px ;
- opacity: 1;
- stroke: white
+/*.not{*/
+/* stroke-width: .2px ;*/
+/* opacity: .5;*/
+/* stroke: white*/
 
-}
+/*}*/
 .highlighted{
- stroke-width: 4px !important;
- opacity: 1 !important;
- stroke: green !important
- /*opacity: 1;*/
+ stroke-width: 3px !important;
+ opacity: .5!important;
+ stroke: green !important;
 }

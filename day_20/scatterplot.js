@@ -6,7 +6,7 @@ var parseMonth = d3.timeParse("%b");
 var mobileScreen = (window.innerWidth < 500 ? true : false);
 
 //Scatterplot
-var margin2 ={ top: 20, right: 0, bottom:20, left: 40 },
+var margin2 ={ top: 5, right: 0, bottom:20, left: 40 },
 	width2 = width,
 	height2 = (height)*2;
 
@@ -199,7 +199,7 @@ function showTooltip (d) {
 		.style("fill", function(d) {return "white";})
 	d3.selectAll('.scatterTooltip')
 		.style('background-color', 'rgba(0,0,0,.8)')
-		 .style("left", (d3.event.pageX-(window.innerWidth/2)) + "px")
+		 .style("left", (d3.event.pageX) + "px")
       .style("top", (d3.event.pageY) + "px")
 		.html(humanMonth(d.data.month) + ", "+ humanYear(d.data.year) + "</br> " + newData.monthSatelliteCount + " satellite images."  + "</br> " + "NDVI: " + formatNum(newData.ndvi))
 		
