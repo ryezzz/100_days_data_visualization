@@ -16,12 +16,28 @@ body, html{
   left: 5%;
   z-index: 5;
   top:80%;
+    /*background-color: rgba(0,0,0, .5)*/
+
+  
 }
+
+#legend{
+
+    opacity: .7;
+
+}
+
+.legendText{
+  font-size: 10px;
+  color: white;
+}
+
+
 
 #mapTitleDate{
   font-size: 30px;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top:10px;
+  margin-left: 37px
 }
 
 #gridContainer{
@@ -128,6 +144,7 @@ position: relative;
 @media only screen and (max-width: 800px) {
     #gridContainer{
       width: 100%;
+      margin-left: 2.5%;
     }
     
     .mapLabelSub{
@@ -152,27 +169,29 @@ position: relative;
                       "buttonsAndInput"
                       "chartDiv"
 }
-}
-    
-
-    
-
-
-
 
 .mapTitle{
-  color: white;
-  z-index: 5;
-  top: 85%;
+  left: 29%;
+  top: 90%;
+    background-color: rgba(0,0,0, .5)
+
+  
 }
+
+}
+    
+
     
 
 
 
-#legend{
-  positon: absolute;
-  z-index: 15;
-}
+
+
+    
+
+
+
+
 .openingOverlay{
   display:none;
   position: absolute;

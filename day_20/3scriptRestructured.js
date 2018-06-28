@@ -49,28 +49,49 @@ var margin = { top: 0, right: 0, bottom: 0, left: 40 }
 // var sliderFreeInput = document.getElementById("timeSlider");
 
 function createLegend(){
+    var legendWidth = 90,
+        legendRectDemensions = 15;
     
-    var colors = ['#ff0000','#ff0000', '#fcdb00', '#8cdd00', '#31b201',
-      '#079401', '#008400', '#036301', '#012e01', '#011301']
+    var colors = ['#011301', '#ff0000','#ff0000', '#fcdb00', '#8cdd00', '#31b201',
+        '#036301']
+    var legendX = d3.scaleBand()
+                 .domain(colors)
+                 .range([legendWidth, 0])
     
-    var color = d3.scaleQuantize()
-    // .domain(d3.extent(data, function(d) { return d.ndvi}))
-    // .range(['#ff0000','#ff0000', '#fcdb00', '#8cdd00', '#31b201',
-    //   '#079401', '#008400', '#036301', '#012e01', '#011301']);
+    var legendColor = d3.scaleOrdinal()
+    .domain([0, colors.length])
+  .range(colors);
 
     var legend = d3.select('#legend')
                    .append('svg')
-                   .attr('width', 100)
-                   .attr('height', 100)
-                   .style('fill', 'white')
-        
-        legend.selectAll('rect')
+                   .attr('width', 150)
+                   .attr('height', 100),
+        legendRectG = legend.append('g')
+                     .attr("transform", "translate(" + 15 + ", 50)");
+
+    
+        legendRectG.selectAll('rect')
               .data(colors)
               .enter()
               .append('rect')
-              .attr('width', "10px")
-              .attr('height', "0px")
-              .style('fill', 'white')
+              .attr('width', legendRectDemensions +"px")
+              .attr('height', legendRectDemensions +"px")
+              .attr('x', function(d){return legendX(d)})
+              .style('fill', function(d){
+                  return legendColor(d)}
+              )
+              
+        var legendText1 = legend.append('text')
+                            .attr('class', 'legendText')
+                            .text('More')
+                            .attr('y', 60)
+                            .style('fill', 'white')
+        var legendText2 = legend.append('text')
+                            .attr('class', 'legendText')
+                            .text('Less')
+                            .attr('y', 60)
+                            .attr('x', legendRectDemensions * colors.length+10)
+                            .style('fill', 'white')
     
 }   
 
@@ -100,7 +121,7 @@ function loopThrough(year) {
     d3.selectAll('.mapImg')
         .style('opacity', function() {
             if (this.src.includes(year)) {
-                return "1"
+                return ".9"
             } else {(console.log(this.src))}
 
             d3.selectAll('g.tick')
