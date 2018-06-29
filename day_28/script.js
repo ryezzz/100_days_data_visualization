@@ -79,14 +79,45 @@ var geojson;
 // ... our listeners
 
 function zoomToFeature(e) {
+    var layer = e.target;
     map.fitBounds(e.target.getBounds());
+    info.update(layer.feature.properties)
 }
+
+
+
+    var selection;
+
 
 function onEachFeature(feature, layer) {
     layer.on({
+        
         mouseover: highlightFeature,
         mouseout: resetHighlight,
-        click: zoomToFeature
+        click: function(e) {
+             zoomToFeature(e)
+}
+// if (selection) {
+//     geojson.resetStyle(e.target)
+//     selection = null
+// }
+//         selection = e.target
+
+//     geojson.resetStyle(e.target);
+//     highlightFeature(e)
+//     zoomToFeature(e)
+    
+    
+
+//     //   e.target.setStyle(gardenSelectedStyle());
+     
+//     //   selectedLayer = gardenLayer;
+
+//     //   // Insert some HTML with the feature name
+//     //   buildSummaryLabel(feature);
+
+//       L.DomEvent.stopPropagation(e); // stop click event from being propagated further
+//     }
     });
 }
 
@@ -105,7 +136,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = "<h4>Death Rate By Alzheimer's</h4>" +  (props ?
+    this._div.innerHTML = "<h4>Alzheimer's Death Rate</h4>" +  (props ?
         '<b>' + props.name + '</b><br />' + props["Death Rate"] + ' people / 100'
         : 'Hover over a state');
 };
